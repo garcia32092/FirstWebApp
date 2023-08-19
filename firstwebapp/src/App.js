@@ -9,11 +9,10 @@ function App() {
     return (
         <Router>
           <NavBar/>
-          <Home/>
             <Routes>
-                <Route path="/" exact component={Home} />
-                <Route path="/services" component={Services} />
-                <Route path="/contact" component={Contact} />
+                <Route path="/home" element={<Home/>} />
+                <Route path="/services" element={<Services/>} />
+                <Route path="/contact" element={<Contact/>} />
             </Routes>
         </Router>
     );
