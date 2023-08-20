@@ -1,11 +1,59 @@
 import React from 'react';
+import { Container, Typography, TextField, Button } from '@mui/material';
 
 const Contact = () => {
     return (
-        <div>
-            <h1>Contact Page</h1>
-            <p>Welcome to our HVAC website. We provide the best heating, ventilation, and air conditioning services.</p>
-        </div>
+        <Container>
+            <Typography variant="h2" gutterBottom>
+                Contact Us
+            </Typography>
+            <Typography variant="body1" paragraph>
+                We would love to hear from you! Please fill out the form below and we will get in touch with you as soon as possible.
+            </Typography>
+            <form noValidate autoComplete="off">
+                <TextField
+                    label="Name"
+                    variant="outlined"
+                    fullWidth
+                    margin="normal"
+                    InputProps={{
+                        style: {
+                            color: "#cc0000",
+                            backgroundColor: "rgba(0, 0, 0, 0.28)"
+                        }
+                    }}
+                />
+                <TextField
+                    label="Email"
+                    variant="outlined"
+                    fullWidth
+                    margin="normal"
+                    InputProps={{
+                        style: {
+                            color: "#cc0000",
+                            backgroundColor: "rgba(0, 0, 0, 0.28)"
+                        }
+                    }}
+                />
+                <TextField
+                    label="Message"
+                    variant="outlined"
+                    multiline
+                    rows={4}
+                    fullWidth
+                    margin="normal"
+                    InputProps={{
+                        style: {
+                            color: "#cc0000",
+                            backgroundColor: "rgba(0, 0, 0, 0.28)"
+                        }
+                    }}
+                />
+                <Button variant="contained" color="primary" type="submit" sx={{ marginTop: 2 }}>
+                    Submit
+                </Button>
+            </form>
+        </Container>
     );
 }
 
