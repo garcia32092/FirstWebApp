@@ -44,19 +44,14 @@ const Home = () => {
         <Box style={{
             display: 'flex',
             flexDirection: 'column',
-            textAlign: 'left',
+            textAlign: 'center',
             alignItems: 'center',
             position: 'absolute',
             top: '22%',
             left: '38%',
             transform: 'translate(-50%, -50%)',
         }}>
-            <Typography variant="h2" style={{ fontFamily: 'Custom-Arvo', fontWeight: 'bold', fontStyle: 'normal', fontSize: '5vw', color: '#cc0000', textShadow: '2px 1px 0.5px black, 0 0 0em black, 0 0 0em black' }}>
-                SPARTAN
-            </Typography>
-            <Typography variant="h4" style={{ fontFamily: 'Custom-Arvo', fontWeight: 'bold', fontStyle: 'normal', fontSize: '3vw', color: '#cc0000', textShadow: '2px 1px 0.5px black, 0 0 0em black, 0 0 0em black' }}>
-                MECHANICAL & SERVICE
-            </Typography>
+            <img src="/SpartanText.png" alt="" width="100%" />
         </Box>
         <Card id="infoCard" style={{
             backgroundColor: 'rgba(0, 0, 0, 0.8)',
