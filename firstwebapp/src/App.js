@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Home from './components/Home';
 import Services from './components/Services';
@@ -24,6 +25,16 @@ const theme = createTheme({
     },
 });
 
+function ScrollToTop() {
+    const { pathname } = useLocation();
+  
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+  
+    return null;
+  }
+
 function App() {
     // Create the showAnimation state
     const [showAnimation, setShowAnimation] = useState(false);
@@ -44,6 +55,7 @@ function App() {
     return (
         <ThemeProvider theme={theme}>
             <Router>
+                <ScrollToTop />
                 {showAnimation && <InitialAnimation onAnimationEnd={handleAnimationEnd} />} {/* Conditionally render the InitialAnimation */}
                 <NavBar/>
                 <Routes>

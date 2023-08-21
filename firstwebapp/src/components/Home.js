@@ -1,10 +1,29 @@
-import React from 'react';
-import { Container, Typography, Box, Button, Card } from '@mui/material';
+import React, { useRef, useEffect } from 'react';
+import { Container, Typography, Box, Button, Card, Grid } from '@mui/material';
 import { Link } from 'react-router-dom';
 import ScrollTrigger from 'react-scroll-trigger';
 import TriggeredContact from './TriggeredContact';
 
 const Home = () => {
+    const textRef = useRef(null);
+    const imageRef = useRef(null);
+  
+    const handleEnter = () => {
+      textRef.current.style.transform = 'scale(1)';
+      textRef.current.style.opacity = '1';
+      imageRef.current.style.transform = 'translateX(0%)';
+    };
+  
+    const handleExit = () => {
+      textRef.current.style.transform = 'scale(0.8)';
+      textRef.current.style.opacity = '0';
+      imageRef.current.style.transform = 'translateX(100%)';
+    };
+  
+    useEffect(() => {
+      handleExit();
+    }, []);
+
   return (
     <div>
         <ScrollTrigger onProgress={({ progress }) => {
@@ -44,7 +63,7 @@ const Home = () => {
             padding: '28px',
             textAlign: 'center',
             position: 'absolute',
-            top: '140%',
+            marginTop: '225px',
             left: '50%',
             transform: 'translate(-50%, -50%)',
             opacity: 0
@@ -58,9 +77,26 @@ const Home = () => {
                 </Button>
             </Box>
         </Card>
-      <div style={{ marginTop: '450px' }}>
-        <TriggeredContact />
-      </div>
+        <Container style={{ marginTop: '500px' }}>
+            <ScrollTrigger onEnter={handleEnter} onExit={handleExit}>
+                <div>
+                    <Grid container spacing={4}>
+                        <Grid item xs={12} md={6} ref={textRef} style={{ marginTop: '75px'}}>
+                            <Typography variant="h3" gutterBottom>
+                                Our business is personal
+                            </Typography>
+                            <Typography variant="body1" paragraph>
+                                Spartan Mechanical & Service was founded in the year 2021 by a group of experienced engineers. Since then, the company has been providing top-quality services in the field of heating, ventilation, and air conditioning. Our team of experts is dedicated to offering the best solutions to our customers. We take pride in our work and strive to provide the highest quality services.
+                            </Typography>
+                        </Grid>
+                        <Grid item xs={12} md={6}>
+                            <img src="/Thumbs-Up.jpeg" alt="" width="100%" ref={imageRef} />
+                        </Grid>
+                    </Grid>
+                    <TriggeredContact />
+                </div>
+            </ScrollTrigger>
+        </Container>
     </div>
   );
 }
