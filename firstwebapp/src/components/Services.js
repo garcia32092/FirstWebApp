@@ -9,7 +9,7 @@ const services = [
 
 const Services = () => {
     return (
-        <Container>
+        <Container style={{ marginTop: '40px', marginBottom: '75px' }}>
             <Typography variant="h2" gutterBottom>
                 Our Services
             </Typography>

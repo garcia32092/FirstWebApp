@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Home from './components/Home';
@@ -7,6 +7,7 @@ import Contact from './components/Contact';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import FooterSection from './components/FooterSection';
+import InitialAnimation from './components/InitialAnimation';
 
 const theme = createTheme({
     palette: {
@@ -24,9 +25,26 @@ const theme = createTheme({
 });
 
 function App() {
+    // Create the showAnimation state
+    const [showAnimation, setShowAnimation] = useState(false);
+
+    useEffect(() => {
+        // Show the animation only if the user hasn't seen it yet
+        if (!localStorage.getItem('animationShown')) {
+            setShowAnimation(true);
+            localStorage.setItem('animationShown', 'true');
+        }
+    }, []);
+
+    // Handle the end of the animation
+    const handleAnimationEnd = () => {
+        setShowAnimation(false);
+    };
+
     return (
         <ThemeProvider theme={theme}>
             <Router>
+                {showAnimation && <InitialAnimation onAnimationEnd={handleAnimationEnd} />} {/* Conditionally render the InitialAnimation */}
                 <NavBar/>
                 <Routes>
                     <Route path="/" element={<Home/>} />

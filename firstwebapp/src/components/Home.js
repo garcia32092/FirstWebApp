@@ -11,7 +11,7 @@ const Home = () => {
           const multiplier = 1.9;  // Adjust this value to control the fading speed
           const opacity = Math.max(1.6 - (progress * multiplier), 0);
           document.getElementById('homeContainer').style.opacity = opacity;
-          document.getElementById('infoCard').style.opacity = Math.max((progress * multiplier) - 0.7, 0);
+          document.getElementById('infoCard').style.opacity = Math.max((progress * multiplier) - 0.8, 0);
         }}>
             <Container id="homeContainer" style={{
                 backgroundImage: 'url("/HeaderImage.jpg")',

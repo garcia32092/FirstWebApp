@@ -3,7 +3,7 @@ import { Container, Typography, TextField, Button } from '@mui/material';
 
 const Contact = () => {
     return (
-        <Container>
+        <Container style={{ marginTop: '40px', marginBottom: '75px' }}>
             <Typography variant="h2" gutterBottom>
                 Contact Us
             </Typography>
