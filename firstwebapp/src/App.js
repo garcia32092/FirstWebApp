@@ -5,6 +5,8 @@ import Home from './components/Home';
 import Services from './components/Services';
 import Contact from './components/Contact';
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
+import FooterSection from './components/FooterSection';
 
 const theme = createTheme({
     palette: {
@@ -17,7 +19,7 @@ const theme = createTheme({
         },
     },
     typography: {
-        fontFamily: 'Arial, sans-serif',
+        fontFamily: 'Custom-Arvo, sans-serif',
     },
 });
 
@@ -32,6 +34,8 @@ function App() {
                     <Route path="/contact" element={<Contact/>} />
                 </Routes>
             </Router>
+            <FooterSection/>
+            <Footer/>
         </ThemeProvider>
     );
 }

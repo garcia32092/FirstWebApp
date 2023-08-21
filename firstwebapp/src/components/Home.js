@@ -8,38 +8,43 @@ const Home = () => {
   return (
     <div>
         <ScrollTrigger onProgress={({ progress }) => {
-          const multiplier = 1.7;  // Adjust this value to control the fading speed
+          const multiplier = 1.9;  // Adjust this value to control the fading speed
           const opacity = Math.max(1.6 - (progress * multiplier), 0);
           document.getElementById('homeContainer').style.opacity = opacity;
-          document.getElementById('infoCard').style.opacity = Math.max((progress * multiplier) - 0.6, 0);
+          document.getElementById('infoCard').style.opacity = Math.max((progress * multiplier) - 0.7, 0);
         }}>
             <Container id="homeContainer" style={{
                 backgroundImage: 'url("/HeaderImage.jpg")',
                 backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
                 minHeight: '100vh',  // Set a minimum height for the Container
             }}>
             </Container>
         </ScrollTrigger>
-        <Card style={{
-            backgroundColor: 'rgba(255, 255, 255, 0.7)',
-            padding: '10px',
-            textAlign: 'center',
+        <Box style={{
+            display: 'flex',
+            flexDirection: 'column',
+            textAlign: 'left',
+            alignItems: 'center',
             position: 'absolute',
-            top: '18%',
-            left: '50%',
+            top: '22%',
+            left: '38%',
             transform: 'translate(-50%, -50%)',
-            height: '70px'
         }}>
-            <Typography variant="h2" gutterBottom style={{ color: '#cc0000', textShadow: '2px 1px 0.5px black, 0 0 0em black, 0 0 0em black' }}>
-                Spartan Mechanical & Service
+            <Typography variant="h2" style={{ fontFamily: 'Custom-Arvo', fontWeight: 'bold', fontStyle: 'normal', fontSize: '5vw', color: '#cc0000', textShadow: '2px 1px 0.5px black, 0 0 0em black, 0 0 0em black' }}>
+                SPARTAN
             </Typography>
-        </Card>
+            <Typography variant="h4" style={{ fontFamily: 'Custom-Arvo', fontWeight: 'bold', fontStyle: 'normal', fontSize: '3vw', color: '#cc0000', textShadow: '2px 1px 0.5px black, 0 0 0em black, 0 0 0em black' }}>
+                MECHANICAL & SERVICE
+            </Typography>
+        </Box>
         <Card id="infoCard" style={{
-            backgroundColor: 'rgba(0, 0, 0, 0.5)',
-            padding: '25px',
+            backgroundColor: 'rgba(0, 0, 0, 0.8)',
+            padding: '28px',
             textAlign: 'center',
             position: 'absolute',
-            top: '130%',
+            top: '140%',
             left: '50%',
             transform: 'translate(-50%, -50%)',
             opacity: 0
