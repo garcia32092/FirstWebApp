@@ -20,7 +20,7 @@ const NavBar = () => {
         <AppBar position="sticky">
             <Toolbar>
                 <Link to="/">
-                    <img src="/SpartanLogo.png" alt="Logo" width="100" height="100" />
+                    <img src="%PUBLIC_URL%/SpartanLogo.png" alt="Logo" width="100" height="100" />
                 </Link>
                 <div style={{ flexGrow: 1 }} />
                 <Button startIcon={<StarIcon />} color="inherit" variant="text" component={Link} to="#">
