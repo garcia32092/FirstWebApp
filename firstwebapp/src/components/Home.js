@@ -33,7 +33,7 @@ const Home = () => {
           document.getElementById('infoCard').style.opacity = Math.max((progress * multiplier) - 0.8, 0);
         }}>
             <Container id="homeContainer" style={{
-                backgroundImage: 'url("/HeaderImage.jpg")',
+                backgroundImage: `url(${process.env.PUBLIC_URL}/HeaderImage.jpg)`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
@@ -51,7 +51,7 @@ const Home = () => {
             left: '38%',
             transform: 'translate(-50%, -50%)',
         }}>
-            <img src="/SpartanText.png" alt="" width="100%" />
+            <img src={process.env.PUBLIC_URL + "/SpartanText.png"} alt="Text" width="100%" />
         </Box>
         <Card id="infoCard" style={{
             backgroundColor: 'rgba(0, 0, 0, 0.8)',
@@ -77,15 +77,15 @@ const Home = () => {
                 <div>
                     <Grid container spacing={4}>
                         <Grid item xs={12} md={6} ref={textRef} style={{ marginTop: '75px'}}>
-                            <Typography variant="h3" gutterBottom>
+                            <Typography variant="h3" gutterBottom align="center">
                                 Our business is personal
                             </Typography>
-                            <Typography variant="body1" paragraph>
+                            <Typography variant="body1" paragraph align="center">
                                 Spartan Mechanical & Service was founded in the year 2021 by a group of experienced engineers. Since then, the company has been providing top-quality services in the field of heating, ventilation, and air conditioning. Our team of experts is dedicated to offering the best solutions to our customers. We take pride in our work and strive to provide the highest quality services.
                             </Typography>
                         </Grid>
                         <Grid item xs={12} md={6}>
-                            <img src="/Thumbs-Up.jpeg" alt="" width="100%" ref={imageRef} />
+                            <img src={process.env.PUBLIC_URL + "/Thumbs-Up.jpeg"} alt="" width="100%" ref={imageRef} />
                         </Grid>
                     </Grid>
                     <TriggeredContact />

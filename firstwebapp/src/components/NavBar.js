@@ -20,14 +20,26 @@ const NavBar = () => {
         <AppBar position="sticky">
             <Toolbar>
                 <Link to="/">
-                    <img src="%PUBLIC_URL%/SpartanLogo.png" alt="Logo" width="100" height="100" />
+                    <img src={process.env.PUBLIC_URL + "/SpartanLogo.png"} alt="Logo" width="100" height="100" />
                 </Link>
                 <div style={{ flexGrow: 1 }} />
-                <Button startIcon={<StarIcon />} color="inherit" variant="text" component={Link} to="#">
-                    Review us on Google
+                <Button 
+                    startIcon={<StarIcon />} 
+                    color="inherit" 
+                    variant="text" 
+                    component={Link} 
+                    to="#"
+                    style={{ textAlign: 'center' }}>
+                        Review us on Google
                 </Button>
-                <Button startIcon={<CallIcon />} color="inherit" variant="text" component={Link} to="#">
-                    Call Us
+                <Button 
+                    startIcon={<CallIcon />} 
+                    color="inherit" 
+                    variant="text" 
+                    component={Link} 
+                    to="#"
+                    style={{ textAlign: 'center' }}>
+                        Call Us
                 </Button>
                 <IconButton edge="end" color="inherit" aria-label="menu" onClick={handleMenuOpen}>
                     <MenuIcon />

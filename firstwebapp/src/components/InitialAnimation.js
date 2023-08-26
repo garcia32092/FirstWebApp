@@ -5,7 +5,7 @@ import './InitialAnimation.css';
 const InitialAnimation = ({ onAnimationEnd }) => {
   return (
     <div className="animation-container" onAnimationEnd={onAnimationEnd}>
-      <img src="/SpartanLogo.png" alt="Logo" className="logo-animation" />
+      <img src={process.env.PUBLIC_URL + "/SpartanLogo.png"} alt="Logo" className="logo-animation" />
     </div>
   );
 };

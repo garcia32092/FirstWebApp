@@ -8,7 +8,7 @@ const FooterSection = () => {
       <Container>
         <Grid container spacing={4} justifyContent="center">
           <Grid item xs={12} md={4} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-            <img src="/SpartanLogo.png" alt="Logo" width="100" height="100" />
+            <img src={process.env.PUBLIC_URL + "/SpartanLogo.png"} alt="Logo" width="100" height="100" />
             <Box mt={2}>
               <IconButton color="primary" component={Link} href="#">
                 <Facebook />

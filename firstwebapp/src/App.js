@@ -54,7 +54,7 @@ function App() {
 
     return (
         <ThemeProvider theme={theme}>
-            <Router>
+            <Router basename="/FirstWebApp">
                 <ScrollToTop />
                 {showAnimation && <InitialAnimation onAnimationEnd={handleAnimationEnd} />} {/* Conditionally render the InitialAnimation */}
                 <NavBar/>
