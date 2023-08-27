@@ -12,10 +12,8 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '14'  # or your preferred Node.js version
+    - name: Change to correct directory
+      run: cd firstwebapp
 
     - name: Install Dependencies
       run: npm install
