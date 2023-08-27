@@ -13,7 +13,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Change to correct directory
-      run: cd firstwebapp
+      run: cd .\firstwebapp\
 
     - name: Install Dependencies
       run: npm install
