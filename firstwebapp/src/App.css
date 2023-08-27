@@ -4,28 +4,28 @@
 
 @font-face {
   font-family: "Custom-Arvo";
-  src: url("/Custom-Arvo-Bold.ttf") format("truetype");
+  src: url("/public/Custom-Arvo-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Custom-Arvo";
-  src: url("/Custom-Arvo-BoldItalic.ttf") format("truetype");
+  src: url("/public/Custom-Arvo-BoldItalic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Custom-Arvo";
-  src: url("/Custom-Arvo-Italic.ttf") format("truetype");
+  src: url("/public/Custom-Arvo-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Custom-Arvo";
-  src: url("/Custom-Arvo-Regular.ttf") format("truetype");
+  src: url("/public/Custom-Arvo-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }

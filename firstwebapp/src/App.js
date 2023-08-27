@@ -9,6 +9,9 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import FooterSection from './components/FooterSection';
 import InitialAnimation from './components/InitialAnimation';
+import './App.css';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 const theme = createTheme({
     palette: {
@@ -30,6 +33,9 @@ function ScrollToTop() {
   
     useEffect(() => {
       window.scrollTo(0, 0);
+      AOS.init({
+        duration: 1000,
+      });
     }, [pathname]);
   
     return null;

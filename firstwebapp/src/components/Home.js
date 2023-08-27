@@ -1,31 +1,12 @@
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 import { Container, Typography, Box, Button, Card, Grid } from '@mui/material';
 import { Link } from 'react-router-dom';
 import ScrollTrigger from 'react-scroll-trigger';
 import TriggeredContact from './TriggeredContact';
 
 const Home = () => {
-    const textRef = useRef(null);
-    const imageRef = useRef(null);
-  
-    const handleEnter = () => {
-      textRef.current.style.transform = 'scale(1)';
-      textRef.current.style.opacity = '1';
-      imageRef.current.style.transform = 'translateX(0%)';
-    };
-  
-    const handleExit = () => {
-      textRef.current.style.transform = 'scale(0.8)';
-      textRef.current.style.opacity = '0';
-      imageRef.current.style.transform = 'translateX(100%)';
-    };
-  
-    useEffect(() => {
-      handleExit();
-    }, []);
-
   return (
-    <div>
+    <div style={{ overflowX: 'hidden' }}>
         <ScrollTrigger onProgress={({ progress }) => {
           const multiplier = 1.9;  // Adjust this value to control the fading speed
           const opacity = Math.max(1.6 - (progress * multiplier), 0);
@@ -76,24 +57,28 @@ const Home = () => {
             </Box>
         </Card>
         <Container style={{ marginTop: '500px' }}>
-            <ScrollTrigger onEnter={handleEnter} onExit={handleExit}>
-                <div>
-                    <Grid container spacing={4}>
-                        <Grid item xs={12} md={6} ref={textRef} style={{ marginTop: '75px'}}>
-                            <Typography variant="h3" gutterBottom align="center">
-                                Our business is personal
-                            </Typography>
-                            <Typography variant="body1" paragraph align="center">
-                                Spartan Mechanical & Service was founded in the year 2021 by a group of experienced engineers. Since then, the company has been providing top-quality services in the field of heating, ventilation, and air conditioning. Our team of experts is dedicated to offering the best solutions to our customers. We take pride in our work and strive to provide the highest quality services.
-                            </Typography>
-                        </Grid>
-                        <Grid item xs={12} md={6}>
-                            <img src={process.env.PUBLIC_URL + "/Thumbs-Up.jpeg"} alt="" width="100%" ref={imageRef} />
-                        </Grid>
+            <div>
+                <Grid container spacing={4}>
+                    <Grid item xs={12} md={6} style={{ marginTop: '75px'}}>
+                        <Typography variant="h3" gutterBottom align="center" data-aos="zoom-in">
+                            Our business is personal
+                        </Typography>
+                        <Typography variant="body1" paragraph align="center" data-aos="zoom-in">
+                            Spartan Mechanical & Service was founded in the year 2021 by a group of experienced engineers. Since then, the company has been providing top-quality services in the field of heating, ventilation, and air conditioning. Our team of experts is dedicated to offering the best solutions to our customers. We take pride in our work and strive to provide the highest quality services.
+                        </Typography>
                     </Grid>
-                    <TriggeredContact />
-                </div>
-            </ScrollTrigger>
+                    <Grid item xs={12} md={6}>
+                        <img src={process.env.PUBLIC_URL + "/Thumbs-Up.jpeg"}
+                        alt="Thumbs Up" 
+                        width="100%" 
+                        data-aos="fade-left"
+                        data-aos-duration="400"
+                        data-aos-easing="ease-out"
+                        />
+                    </Grid>
+                </Grid>
+                <TriggeredContact />
+            </div>
         </Container>
     </div>
   );
