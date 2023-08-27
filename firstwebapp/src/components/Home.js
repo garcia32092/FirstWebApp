@@ -41,7 +41,7 @@ const Home = () => {
             }}>
             </Container>
         </ScrollTrigger>
-        <Box style={{
+        <Box sx={{
             display: 'flex',
             flexDirection: 'column',
             textAlign: 'center',
@@ -50,8 +50,11 @@ const Home = () => {
             top: '22%',
             left: '38%',
             transform: 'translate(-50%, -50%)',
+            '& img': {
+                width: ['122%', '120%', '95%', '64%', '64%'], // 80% on small screens, 60% on medium, 50% on large
+            }
         }}>
-            <img src={process.env.PUBLIC_URL + "/SpartanText.png"} alt="Text" width="100%" />
+            <img src={process.env.PUBLIC_URL + "/SpartanText.png"} alt="Text" />
         </Box>
         <Card id="infoCard" style={{
             backgroundColor: 'rgba(0, 0, 0, 0.8)',
