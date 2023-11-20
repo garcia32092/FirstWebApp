@@ -8,7 +8,7 @@ const albums = [
       description: "Released: 11-19-2023",
       songs: [
         { title: "Yeezy Remix", url: "https://drive.google.com/uc?export=download&id=1YXaNtSP_mEiNizVY6a-tuUUlA-eugudy" },
-        { title: "Entrance", url: "https://www.reverbnation.com/soundofknowledge/song/5301616-entrance" },
+        { title: "Entrance", url: "https://www.reverbnation.com/soundofknowledge/song/5301616-entrance" }, {/* This URL is not working. Needs updating */}
         // more songs
       ]
     },
