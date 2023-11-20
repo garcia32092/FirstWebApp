@@ -1,64 +1,33 @@
 import React from 'react';
-import { AppBar, Toolbar, IconButton, Menu, MenuItem, Button } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
-import StarIcon from '@mui/icons-material/Star';
-import CallIcon from '@mui/icons-material/Call';
+import { AppBar, Toolbar, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {
-    const [anchorEl, setAnchorEl] = React.useState(null);
-
-    const handleMenuOpen = (event) => {
-        setAnchorEl(event.currentTarget);
-    };
-
-    const handleMenuClose = () => {
-        setAnchorEl(null);
+    const linkStyle = {
+        color: 'black', // Text color
+        textDecoration: 'none',
+        '&:hover': {
+            color: 'black', // Highlight color on hover
+        },
     };
 
     return (
-        <AppBar position="sticky">
-            <Toolbar>
+        <AppBar position="static" color="default" style={{ backgroundColor: 'inherit', boxShadow: 'none' }}>
+            <div style={{ display: 'flex', justifyContent: 'center', marginTop: '15px' }}>
                 <Link to="/">
-                    <img src={process.env.PUBLIC_URL + "/SpartanLogo.png"} alt="Logo" width="100" height="100" />
+                    <img src={process.env.PUBLIC_URL + "/BlackKnowledgeLogo.png"} alt="Logo" width="275" height="195" /> {/* logo png image ratio is 1 to 0.71 */}
                 </Link>
-                <div style={{ flexGrow: 1 }} />
-                <Button 
-                    startIcon={<StarIcon />} 
-                    color="inherit" 
-                    variant="text" 
-                    component={Link} 
-                    to="#"
-                    style={{ textAlign: 'center' }}>
-                        Review us on Google
+            </div>
+            <Toolbar style={{ justifyContent: 'center' }}>
+                <Button style={linkStyle} component={Link} to="/">
+                    Music
                 </Button>
-                <Button 
-                    startIcon={<CallIcon />} 
-                    color="inherit" 
-                    variant="text" 
-                    component={Link} 
-                    to="#"
-                    style={{ textAlign: 'center' }}>
-                        Call Us
+                <Button style={linkStyle} component={Link} to="/videos">
+                    Videos
                 </Button>
-                <IconButton edge="end" color="inherit" aria-label="menu" onClick={handleMenuOpen}>
-                    <MenuIcon />
-                </IconButton>
-                <Menu
-                    anchorEl={anchorEl}
-                    open={Boolean(anchorEl)}
-                    onClose={handleMenuClose}
-                >
-                    <MenuItem onClick={handleMenuClose}>
-                        <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>Home</Link>
-                    </MenuItem>
-                    <MenuItem onClick={handleMenuClose}>
-                        <Link to="/services" style={{ textDecoration: 'none', color: 'white' }}>Services</Link>
-                    </MenuItem>
-                    <MenuItem onClick={handleMenuClose}>
-                        <Link to="/contact" style={{ textDecoration: 'none', color: 'white' }}>Contact</Link>
-                    </MenuItem>
-                </Menu>
+                <Button style={linkStyle} component={Link} to="/socials">
+                    Socials
+                </Button>
             </Toolbar>
         </AppBar>
     );

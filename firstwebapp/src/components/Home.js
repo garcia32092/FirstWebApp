@@ -1,8 +1,6 @@
 import React from 'react';
-import { Container, Typography, Box, Button, Card, Grid } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Container, Typography, Box, Grid } from '@mui/material';
 import ScrollTrigger from 'react-scroll-trigger';
-import TriggeredContact from './TriggeredContact';
 
 const Home = () => {
   return (
@@ -11,7 +9,6 @@ const Home = () => {
           const multiplier = 1.9;  // Adjust this value to control the fading speed
           const opacity = Math.max(1.6 - (progress * multiplier), 0);
           document.getElementById('homeContainer').style.opacity = opacity;
-          document.getElementById('infoCard').style.opacity = Math.max((progress * multiplier) - 0.8, 0);
         }}>
             <Container id="homeContainer" style={{
                 backgroundImage: `url(${process.env.PUBLIC_URL}/HeaderImage.jpg)`,
@@ -37,25 +34,6 @@ const Home = () => {
         }}>
             <img src={process.env.PUBLIC_URL + "/SpartanText.png"} alt="Text" />
         </Box>
-        <Card id="infoCard" style={{
-            backgroundColor: 'rgba(0, 0, 0, 0.8)',
-            padding: '28px',
-            textAlign: 'center',
-            position: 'absolute',
-            marginTop: '225px',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-            opacity: 0
-        }}>
-            <Typography variant="body1" paragraph>
-                We provide the best heating, ventilation, and air conditioning services...
-            </Typography>
-            <Box sx={{ mt: 4 }}>
-                <Button variant="contained" color="primary" component={Link} to="/services">
-                    Learn More
-                </Button>
-            </Box>
-        </Card>
         <Container style={{ marginTop: '500px' }}>
             <div>
                 <Grid container spacing={4}>
@@ -77,7 +55,6 @@ const Home = () => {
                         />
                     </Grid>
                 </Grid>
-                <TriggeredContact />
             </div>
         </Container>
     </div>
