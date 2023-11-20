@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.bcc5f14d.css",
-    "main.js": "/static/js/main.65e59315.js",
-    "static/js/787.3b62ff8f.chunk.js": "/static/js/787.3b62ff8f.chunk.js",
-    "static/media/Custom-Arvo-Regular.ttf": "/static/media/Custom-Arvo-Regular.e3d3d53c44db025c4592.ttf",
-    "static/media/Custom-Arvo-Bold.ttf": "/static/media/Custom-Arvo-Bold.7d67f4cedc80f3f5d262.ttf",
-    "static/media/Custom-Arvo-BoldItalic.ttf": "/static/media/Custom-Arvo-BoldItalic.fdea97820c2efc108652.ttf",
-    "static/media/Custom-Arvo-Italic.ttf": "/static/media/Custom-Arvo-Italic.a8b62a87ded1615d5df3.ttf",
-    "index.html": "/index.html",
-    "main.bcc5f14d.css.map": "/static/css/main.bcc5f14d.css.map",
-    "main.65e59315.js.map": "/static/js/main.65e59315.js.map",
-    "787.3b62ff8f.chunk.js.map": "/static/js/787.3b62ff8f.chunk.js.map"
+    "main.css": "/FirstWebApp/static/css/main.886ff8f7.css",
+    "main.js": "/FirstWebApp/static/js/main.c6650fcb.js",
+    "static/js/787.3b62ff8f.chunk.js": "/FirstWebApp/static/js/787.3b62ff8f.chunk.js",
+    "static/media/Custom-Arvo-Regular.ttf": "/FirstWebApp/static/media/Custom-Arvo-Regular.e3d3d53c44db025c4592.ttf",
+    "static/media/Custom-Arvo-Bold.ttf": "/FirstWebApp/static/media/Custom-Arvo-Bold.7d67f4cedc80f3f5d262.ttf",
+    "static/media/Custom-Arvo-BoldItalic.ttf": "/FirstWebApp/static/media/Custom-Arvo-BoldItalic.fdea97820c2efc108652.ttf",
+    "static/media/Custom-Arvo-Italic.ttf": "/FirstWebApp/static/media/Custom-Arvo-Italic.a8b62a87ded1615d5df3.ttf",
+    "index.html": "/FirstWebApp/index.html",
+    "main.886ff8f7.css.map": "/FirstWebApp/static/css/main.886ff8f7.css.map",
+    "main.c6650fcb.js.map": "/FirstWebApp/static/js/main.c6650fcb.js.map",
+    "787.3b62ff8f.chunk.js.map": "/FirstWebApp/static/js/787.3b62ff8f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bcc5f14d.css",
-    "static/js/main.65e59315.js"
+    "static/css/main.886ff8f7.css",
+    "static/js/main.c6650fcb.js"
   ]
 }
