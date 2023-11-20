@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.eeb98adb.css",
+    "main.js": "/static/js/main.9232ee66.js",
+    "static/js/787.e1385871.chunk.js": "/static/js/787.e1385871.chunk.js",
+    "static/media/Custom-Arvo-Regular.ttf": "/static/media/Custom-Arvo-Regular.e3d3d53c44db025c4592.ttf",
+    "static/media/Custom-Arvo-Bold.ttf": "/static/media/Custom-Arvo-Bold.7d67f4cedc80f3f5d262.ttf",
+    "static/media/Custom-Arvo-BoldItalic.ttf": "/static/media/Custom-Arvo-BoldItalic.fdea97820c2efc108652.ttf",
+    "static/media/Custom-Arvo-Italic.ttf": "/static/media/Custom-Arvo-Italic.a8b62a87ded1615d5df3.ttf",
+    "index.html": "/index.html",
+    "main.eeb98adb.css.map": "/static/css/main.eeb98adb.css.map",
+    "main.9232ee66.js.map": "/static/js/main.9232ee66.js.map",
+    "787.e1385871.chunk.js.map": "/static/js/787.e1385871.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eeb98adb.css",
+    "static/js/main.9232ee66.js"
+  ]
+}
