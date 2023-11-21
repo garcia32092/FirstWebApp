@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import Home from './components/Home';
+import MainPage from './components/MainPage';
 import Music from './components/Music';
+import Release from './components/Release';
 import Contact from './components/Contact';
 import NavBar from './components/NavBar';
 import InitialAnimation from './components/InitialAnimation';
@@ -63,10 +64,11 @@ function App() {
                 {showAnimation && <InitialAnimation onAnimationEnd={handleAnimationEnd} />} {/* Conditionally render the InitialAnimation */}
                 <NavBar/>
                 <Routes>
-                    <Route path="/" element={<Music/>} />
-                    <Route path="/videos" element={<Music/>} />
+                    <Route path="/" element={<MainPage/>} />
+                    <Route path="/music" element={<MainPage/>} />
+                    {/* <Route path="/videos" element={<Music/>} /> */}
                     <Route path="/socials" element={<Contact/>} />
-                    <Route path="/home" element={<Home/>} /> {/* For viewing purposes of using animation (TO BE DELETED) */}
+                    <Route path="/release/:releaseId" element={<Release/>} />
                 </Routes>
             </Router>
         </ThemeProvider>

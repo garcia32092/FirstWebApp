@@ -1,125 +1,47 @@
 import React, { useState } from 'react';
-import { Container, Typography, Card, CardContent, CardActions, Button } from '@mui/material';
-import ReactAudioPlayer from 'react-audio-player';
+import { Container, Grid, Card, CardMedia, CardContent, Typography } from '@mui/material';
+import './Music.css'; // Import the CSS file
 
-const albums = [
-    { 
-      title: "Album Example 1", 
-      description: "Released: 11-19-2023",
-      songs: [
-        { title: "Yeezy Remix", url: "https://drive.google.com/uc?export=download&id=1YXaNtSP_mEiNizVY6a-tuUUlA-eugudy" },
-        { title: "Entrance", url: "https://www.reverbnation.com/soundofknowledge/song/5301616-entrance" }, {/* This URL is not working. Needs updating */}
-        // more songs
-      ]
-    },
-    // ... other albums
-];
+const Music = ({ releases, onReleaseSelect }) => {
+    const [activeReleaseIndex, setActiveReleaseIndex] = useState(null);
 
-const Music = () => {
-    const [selectedAlbum, setSelectedAlbum] = useState(null);
-    const [currentSongUrl, setCurrentSongUrl] = useState(null);
+    const handleReleaseClick = (release, index) => {
+        setActiveReleaseIndex(index);
+        onReleaseSelect(release);
+    };
 
-    return (
-        <Container style={{ marginTop: '40px', marginBottom: '75px' }}>
-            {albums.map((album, index) => (
-                <Card key={index} sx={{ marginBottom: 4 }}>
-                    <CardContent>
-                        <Typography variant="h5" component="div">
-                            {album.title}
+    const renderReleaseButtons = () => {
+        return releases.map((release, index) => (
+            <Grid item key={index}>
+                <Card 
+                    onClick={() => handleReleaseClick(release, index)}
+                    className={`card ${activeReleaseIndex === index ? 'card-active' : ''}`}
+                >
+                    <CardMedia
+                        component="img"
+                        height="150"
+                        image={release.imageUrl}
+                        alt={release.title}
+                    />
+                    <CardContent style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+                        <Typography gutterBottom variant="body2" component="div">
+                            {release.title}
                         </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                            {album.description}
+                        <Typography variant="caption" color="text.secondary">
+                            {release.releaseDate}
                         </Typography>
                     </CardContent>
-                    <CardActions>
-                        <Button size="small" onClick={() => setSelectedAlbum(album)}>Play</Button>
-                    </CardActions>
                 </Card>
-            ))}
-            {selectedAlbum && (
-                <div>
-                    <Typography variant="h5" gutterBottom>
-                        {selectedAlbum.title}
-                    </Typography>
-                    {selectedAlbum.songs.map((song, index) => (
-                        <div key={index} style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
-                            <Button 
-                                variant="body1" 
-                                style={{ marginRight: '10px', cursor: 'pointer' }}
-                                onClick={() => setCurrentSongUrl(song.url)}
-                            >
-                                {song.title}
-                            </Button>
-                        </div>
-                    ))}
-                </div>
-            )}
-            {currentSongUrl && <ReactAudioPlayer src={currentSongUrl} controls autoPlay />}
-            <Typography variant="h3" gutterBottom align="center">
-                Mixtapes
-            </Typography>
-            <Typography variant="h6">
-                Remember Me
-            </Typography>
-            <Typography variant="body2" gutterBottom>
-                Released: March 20, 2013
-            </Typography>
-            <iframe
-                title="Reverbnation Remember Me Widget"
-                width="100%"
-                height="300"
-                scrolling="no"
-                frameborder="0"
-                src="https://www.reverbnation.com/widget_code/html_widget/Album_23476?widget_id=55&pwc[included_songs]=1&context_type=album&pwc[size]=small&pwc[color]=dark"
-                style={{ width: '0px', minWidth: '100%', maxWidth: '100%' }}>
-            </iframe>
-            <Typography variant="h6">
-                Before The First Album
-            </Typography>
-            <Typography variant="body2" gutterBottom>
-                Released: March 20, 2012
-            </Typography>
-            <iframe
-                title="Reverbnation Before The First Album Widget"
-                width="100%"
-                height="300"
-                scrolling="no"
-                frameborder="0"
-                src="https://www.reverbnation.com/widget_code/html_widget/Album_24307?widget_id=55&pwc[included_songs]=1&context_type=album&pwc[size]=small&pwc[color]=dark"
-                style={{ width: '0px', minWidth: '100%', maxWidth: '100%' }}>
-            </iframe>
-            <Typography variant="h6">
-                18 & On Probation
-            </Typography>
-            <Typography variant="body2" gutterBottom>
-                Released: May 7, 2011
-            </Typography>
-            <iframe
-                title="Reverbnation 18 & On Probation Widget"
-                width="100%"
-                height="300"
-                scrolling="no"
-                frameborder="0"
-                src="https://www.reverbnation.com/widget_code/html_widget/Album_24634?widget_id=55&pwc[included_songs]=1&context_type=album&pwc[size]=small&pwc[color]=dark"
-                style={{ width: '0px', minWidth: '100%', maxWidth: '100%' }}>
-            </iframe>
-            <Typography variant="h6">
-                Tha Kum Up
-            </Typography>
-            <Typography variant="body2" gutterBottom>
-                Released: July 22, 2010
-            </Typography>
-            <iframe
-                title="Reverbnation Widget"
-                width="100%"
-                height="300"
-                scrolling="no"
-                frameborder="0"
-                src="https://www.reverbnation.com/widget_code/html_widget/Album_24635?widget_id=55&pwc[included_songs]=1&context_type=album&pwc[size]=small&pwc[color]=dark"
-                style={{ width: '0px', minWidth: '100%', maxWidth: '100%' }}>
-            </iframe>
+            </Grid>
+        ));
+    };
+
+    return (
+        <Container style={{ marginTop: '25px', marginBottom: '25px' }}>
+            <Grid container spacing={2}>
+                {renderReleaseButtons()}
+            </Grid>
         </Container>
-        
     );
 }
 
