@@ -25,8 +25,8 @@ const NavBar = () => {
                 <Button style={linkStyle} component={Link} to="/videos">
                     Videos
                 </Button>
-                <Button style={linkStyle} component={Link} to="/socials">
-                    Socials
+                <Button style={linkStyle} component={Link} to="/links">
+                    Links
                 </Button>
             </Toolbar>
         </AppBar>

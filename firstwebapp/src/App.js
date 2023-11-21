@@ -3,9 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import MainPage from './components/MainPage';
-import Music from './components/Music';
-import Release from './components/Release';
-import Contact from './components/Contact';
+import Links from './components/Links';
+import Videos from './components/Videos';
 import NavBar from './components/NavBar';
 import InitialAnimation from './components/InitialAnimation';
 import './App.css';
@@ -66,9 +65,8 @@ function App() {
                 <Routes>
                     <Route path="/" element={<MainPage/>} />
                     <Route path="/music" element={<MainPage/>} />
-                    {/* <Route path="/videos" element={<Music/>} /> */}
-                    <Route path="/socials" element={<Contact/>} />
-                    <Route path="/release/:releaseId" element={<Release/>} />
+                    <Route path="/videos" element={<Videos/>} />
+                    <Route path="/links" element={<Links/>} />
                 </Routes>
             </Router>
         </ThemeProvider>
