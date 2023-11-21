@@ -19,16 +19,19 @@ const Music = ({ releases, onReleaseSelect }) => {
                 >
                     <CardMedia
                         component="img"
-                        height="150"
+                        height="155"
                         image={release.imageUrl}
                         alt={release.title}
                     />
                     <CardContent style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-                        <Typography gutterBottom variant="body2" component="div">
+                        <Typography gutterBottom variant="body2" align="center">
                             {release.title}
                         </Typography>
                         <Typography variant="caption" color="text.secondary">
                             {release.releaseDate}
+                        </Typography>
+                        <Typography variant="caption" color="text.secondary">
+                            {release.releaseType}
                         </Typography>
                     </CardContent>
                 </Card>
@@ -37,8 +40,17 @@ const Music = ({ releases, onReleaseSelect }) => {
     };
 
     return (
-        <Container style={{ marginTop: '25px', marginBottom: '25px' }}>
-            <Grid container spacing={2}>
+        <Container style={{ 
+            marginTop: '25px', 
+            marginBottom: '25px', 
+            display: 'flex', 
+            justifyContent: 'center' 
+        }}>
+            <Grid container spacing={4} style={{ 
+                maxWidth: '100%', 
+                display: 'flex', 
+                justifyContent: 'center' 
+            }}>
                 {renderReleaseButtons()}
             </Grid>
         </Container>
