@@ -27,7 +27,7 @@ const Videos = () => {
                 title="YT Subscribe Button"
                 src={`https://www.youtube.com/subscribe_embed?channelid=UCLlTafwrWEXSrMb3VLfpfGw`}
                 style={{
-                    marginTop: '40px',
+                    marginTop: '30px',
                     border: 'none',
                     width: '10%', // Adjust as needed
                     height: ''  // Adjust as needed
