@@ -5,7 +5,7 @@ const Videos = () => {
     return (
         <Container style={{
             marginTop: '25px',
-            marginBottom: '5px',
+            marginBottom: '1px',
             display: 'flex', 
             flexDirection: 'column',
             justifyContent: 'center',
@@ -20,19 +20,18 @@ const Videos = () => {
                     border: 'none', // Optional, removes the border
                     maxWidth: '100%', // Ensures responsiveness
                     maxHeight: '100vh' // Adjusts height based on viewport height
-                }}
+            }}
                 allowFullScreen>
             </iframe>
             <iframe
                 title="YT Subscribe Button"
-                src={`https://www.youtube.com/subscribe_embed?channelid=UCLlTafwrWEXSrMb3VLfpfGw`}
+                src="https://www.youtube.com/subscribe_embed?channelid=UCLlTafwrWEXSrMb3VLfpfGw"
+                width="115"
+                height="25"
                 style={{
                     marginTop: '30px',
                     border: 'none',
-                    width: '10%', // Adjust as needed
-                    height: ''  // Adjust as needed
-                }}
-                allowFullScreen>
+            }}>
             </iframe>
         </Container>
     );
