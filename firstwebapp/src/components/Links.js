@@ -3,39 +3,38 @@ import { Container, Button, Typography } from '@mui/material';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
-// import { 
-//     TikTok, Twitter, Instagram, YouTube, 
-//     Snapchat, Facebook, Thread, SoundCloud, 
-//     Discord, // Import other relevant icons
-// } from '@mui/icons-material';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import LinkIcon from '@mui/icons-material/Link';
 
 const socialLinks = [
-    // { name: 'TikTok', icon: <TikTok />, url: 'https://www.tiktok.com/' },
-    { name: 'Twitter', icon: <TwitterIcon />, url: 'https://twitter.com/' },
-    { name: 'Instagram', icon: <InstagramIcon />, url: 'https://www.instagram.com/' },
-    // { name: 'YouTube', icon: <YouTube />, url: 'https://www.youtube.com/' },
-    // { name: 'SnapChat', icon: <Snapchat />, url: 'https://www.snapchat.com/' },
-    { name: 'Facebook', icon: <FacebookIcon />, url: 'https://www.facebook.com/' },
-    // { name: 'Threads', icon: <Thread />, url: 'https://threads.com/' }, // Replace with correct URL
-    // { name: 'SoundCloud', icon: <SoundCloud />, url: 'https://soundcloud.com/' },
-    // { name: 'Discord', icon: <Discord />, url: 'https://discord.com/' },
-    // Add other platforms as needed
+    { name: 'Twitter', icon: <TwitterIcon />, url: 'https://twitter.com/real1eli' },
+    { name: 'Instagram', icon: <InstagramIcon />, url: 'https://www.instagram.com/real1elias' },
+    { name: 'YouTube', icon: <YouTubeIcon />, url: 'https://www.youtube.com/@real1elias' },
+    { name: 'Facebook', icon: <FacebookIcon />, url: 'https://www.facebook.com/real1elias' },
+    { name: 'TikTok', icon: <LinkIcon />, url: 'https://www.tiktok.com/@real1eli' },
+    { name: 'SnapChat', icon: <LinkIcon />, url: 'https://www.t.snapchat.com/j89R5cgz' },
+    { name: 'Threads', icon: <LinkIcon />, url: 'https://threads.com/@real1elias' },
+    { name: 'SoundCloud', icon: <LinkIcon />, url: 'https://soundcloud.com/real1elias' },
+    // { name: 'Discord', icon: <LinkIcon />, url: 'https://discord.com/' },
 ];
 
 const Links = () => {
     return (
-        <Container style={{ marginTop: '25px', marginBottom: '25px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-            <Typography variant="h6">Testing Links Component</Typography>
+        <Container style={{ marginTop: '10px', marginBottom: '5px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             {socialLinks.map((link, index) => (
                 <Button
+                    variant="outlined"
                     key={index}
                     startIcon={link.icon}
                     href={link.url}
                     target="_blank" // Open link in a new tab
                     rel="noopener noreferrer"
-                    style={{ marginBottom: '10px', textTransform: 'none' }}
+                    color="secondary"
+                    style={{
+                        marginTop: '10px'
+                    }}
                 >
-                    <Typography variant="body1">Test: {link.name}</Typography>
+                    <Typography variant="body1">{link.name}</Typography>
                 </Button>
             ))}
         </Container>
