@@ -30,7 +30,7 @@ const NavBar = () => {
         <AppBar position="static" color="default" style={{ backgroundColor: 'inherit', boxShadow: 'none' }}>
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: '10px' }}>
                 <Link to="/">
-                    <img src={process.env.PUBLIC_URL + "/BlackKnowledgeLogo.png"} alt="Logo" width="160" height="114" /> {/* logo png image ratio is 1 to 0.71 */}
+                    <img src={process.env.PUBLIC_URL + "/BlackKnowledgeLogo.png"} alt="Logo" width="125" height="89" /> {/* logo png image ratio is 1 to 0.71 */}
                 </Link>
             </div>
             <Toolbar style={{ justifyContent: 'center' }}>
@@ -74,7 +74,7 @@ const NavBar = () => {
                             sx={{
                                 backgroundColor: '#f0f0f0',
                                 borderRadius: '50%',
-                                margin: '0 5px',
+                                margin: '0 7px',
                                 '&:hover': {
                                     backgroundColor: '#cccccc',
                                 },
