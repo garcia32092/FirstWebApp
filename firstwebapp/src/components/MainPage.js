@@ -1,24 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Typography } from '@mui/material';
 import Music from './Music';
-import { firestore } from '../firebaseConfig';
-import { collection, getDocs } from 'firebase/firestore';
+import releasesData from '../data/releases.json';
 
 const MainPage = () => {
     const [releases, setReleases] = useState([]);
     const [selectedRelease, setSelectedRelease] = useState(null);
 
     useEffect(() => {
-        const fetchData = async () => {
-            const querySnapshot = await getDocs(collection(firestore, 'Releases'));
-            const data = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-            setReleases(data);
-            if (data.length > 0) {
-                setSelectedRelease(data[0]);
-            }
-        };
-      
-        fetchData();
+        setReleases(releasesData);
+        if (releasesData.length > 0) {
+            setSelectedRelease(releasesData[0]);
+        }
     }, []);
 
     return (
