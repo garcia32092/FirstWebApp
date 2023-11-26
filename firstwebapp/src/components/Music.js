@@ -10,6 +10,11 @@ const Music = ({ releases, onReleaseSelect }) => {
     const handleReleaseClick = (release, index) => {
         setActiveReleaseIndex(index);
         onReleaseSelect(release);
+
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     };
 
     const renderReleaseButtons = () => {
