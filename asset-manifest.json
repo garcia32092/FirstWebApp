@@ -1,19 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.766d42fd.css",
-    "main.js": "/static/js/main.f94e7e59.js",
+    "main.css": "/static/css/main.b4ab9404.css",
+    "main.js": "/static/js/main.dd43618e.js",
     "static/js/787.3b62ff8f.chunk.js": "/static/js/787.3b62ff8f.chunk.js",
     "static/media/Custom-Arvo-Regular.ttf": "/static/media/Custom-Arvo-Regular.e3d3d53c44db025c4592.ttf",
     "static/media/Custom-Arvo-Bold.ttf": "/static/media/Custom-Arvo-Bold.7d67f4cedc80f3f5d262.ttf",
     "static/media/Custom-Arvo-BoldItalic.ttf": "/static/media/Custom-Arvo-BoldItalic.fdea97820c2efc108652.ttf",
     "static/media/Custom-Arvo-Italic.ttf": "/static/media/Custom-Arvo-Italic.a8b62a87ded1615d5df3.ttf",
+    "static/media/tiktok.svg": "/static/media/tiktok.a035d90cc2ea38f1264a6ea2e4345115.svg",
+    "static/media/instagram.svg": "/static/media/instagram.e9ce16601301a665d01af965c37789fb.svg",
+    "static/media/applemusic.svg": "/static/media/applemusic.32511862b470b988690d2c4f0163cc53.svg",
+    "static/media/discord.svg": "/static/media/discord.a98902813cceda98108d06295291c391.svg",
+    "static/media/spotify.svg": "/static/media/spotify.f5cc9bf2c53e8ee34b0a318d64a2bc70.svg",
+    "static/media/youtube.svg": "/static/media/youtube.a15e215a8f3b8baeac0310865cda209e.svg",
     "index.html": "/index.html",
-    "main.766d42fd.css.map": "/static/css/main.766d42fd.css.map",
-    "main.f94e7e59.js.map": "/static/js/main.f94e7e59.js.map",
+    "static/media/facebook.svg": "/static/media/facebook.7c75db93c2cbaf1c151b977c60594a35.svg",
+    "static/media/x.svg": "/static/media/x.ee2e4a5f4df1878c0c1a40ed0f721ecf.svg",
+    "main.b4ab9404.css.map": "/static/css/main.b4ab9404.css.map",
+    "main.dd43618e.js.map": "/static/js/main.dd43618e.js.map",
     "787.3b62ff8f.chunk.js.map": "/static/js/787.3b62ff8f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.766d42fd.css",
-    "static/js/main.f94e7e59.js"
+    "static/css/main.b4ab9404.css",
+    "static/js/main.dd43618e.js"
   ]
 }
