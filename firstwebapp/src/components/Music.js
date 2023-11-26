@@ -5,7 +5,6 @@ import './Music.css'; // Import the CSS file
 
 const Music = ({ releases, onReleaseSelect }) => {
     const theme = useTheme();
-
     const [activeReleaseIndex, setActiveReleaseIndex] = useState(null);
 
     const handleReleaseClick = (release, index) => {
@@ -15,10 +14,15 @@ const Music = ({ releases, onReleaseSelect }) => {
 
     const renderReleaseButtons = () => {
         return releases.map((release, index) => (
-            <Grid item key={index}>
+            <Grid item key={index} xs={6} sm={4} md={3} lg={3}>
                 <Card 
                     onClick={() => handleReleaseClick(release, index)}
                     className={`card ${activeReleaseIndex === index ? 'card-active' : ''}`}
+                    sx={{
+                        width: '100%',
+                        display: 'flex',
+                        flexDirection: 'column',
+                    }}
                 >
                     <CardMedia
                         component="img"
