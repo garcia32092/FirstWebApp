@@ -81,9 +81,9 @@ const NavBar = () => {
                                 '&:hover': {
                                     backgroundColor: '#cccccc',
                                 },
-                                height: '42px', // Smaller height
-                                width: '42px',  // Smaller width
-                                padding: '5px', // Adjust padding as needed
+                                height: { xs: '32px', sm: '42px' },
+                                width: { xs: '32px', sm: '42px' },
+                                padding: { xs: '4px', sm: '5px' },
                             }}
                         >
                             {link.icon}
