@@ -3,6 +3,7 @@ import { Container, Typography } from '@mui/material';
 import Music from './Music';
 import releasesData from '../data/releases.json';
 import { useTheme } from '@mui/material/styles';
+import NorthIcon from '@mui/icons-material/North';
 
 const MainPage = () => {
     const [releases, setReleases] = useState([]);
@@ -15,6 +16,28 @@ const MainPage = () => {
             setSelectedRelease(releasesData[0]);
         }
     }, []);
+
+    const renderLinkshareEmbed = () => {
+        if (selectedRelease.linkshareURL) {
+            return (
+                <iframe
+                    title={`${selectedRelease.title} Linkshare`}
+                    src={selectedRelease.linkshareURL}
+                    width="100%"
+                    height="300"
+                    scrolling="no"
+                    frameborder="0"
+                    style={{ width: '0px', minWidth: '100%', maxWidth: '100%' }}>
+                </iframe>
+            );
+        } else {
+            return (
+                <Typography variant="body1" align="center" style={{ marginTop: '20px' }}>
+                    <NorthIcon/>This release is not on streaming platforms<NorthIcon/>
+                </Typography>
+            );
+        }
+    };
 
     return (
         <Container style={{ marginTop: '25px', marginBottom: '25px', backgroundColor: theme.palette.background.default }}>
@@ -30,6 +53,7 @@ const MainPage = () => {
                         src={selectedRelease.embedUrl}
                         style={{ width: '0px', minWidth: '100%', maxWidth: '100%' }}>
                     </iframe>
+                    {renderLinkshareEmbed()}
                 </>
             )}
             <Music releases={releases} onReleaseSelect={setSelectedRelease} />
