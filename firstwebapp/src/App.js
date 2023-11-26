@@ -1,30 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { createTheme, ThemeProvider as MuiThemeProvider, Fab } from '@mui/material';
+import Brightness4Icon from '@mui/icons-material/Brightness4';
+import Brightness7Icon from '@mui/icons-material/Brightness7';
+import { useTheme } from './components/ThemeContext';
 import { useLocation } from 'react-router-dom';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
 import MainPage from './components/MainPage';
-import Links from './components/Links';
 import Videos from './components/Videos';
 import NavBar from './components/NavBar';
-import InitialAnimation from './components/InitialAnimation';
 import './App.css';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
-
-const theme = createTheme({
-    palette: {
-        mode: 'dark',
-        primary: {
-            main: '#ffffff',
-        },
-        secondary: {
-            main: '#000000',
-        },
-    },
-    typography: {
-        fontFamily: 'Custom-Arvo, sans-serif',
-    },
-});
 
 function ScrollToTop() {
     const { pathname } = useLocation();
@@ -40,36 +26,47 @@ function ScrollToTop() {
   }
 
 function App() {
-    // Create the showAnimation state
-    const [showAnimation, setShowAnimation] = useState(false);
+    const { theme, toggleTheme } = useTheme();
+
+    const muiTheme = createTheme({
+        palette: {
+            mode: theme, // Use context theme here
+            // ... other theme settings ...
+        },
+        typography: {
+            fontFamily: 'Custom-Arvo, sans-serif',
+        },
+    });
 
     useEffect(() => {
-        // Show the animation only if the user hasn't seen it yet
-        if (!localStorage.getItem('animationShown')) {
-            setShowAnimation(true);
-            localStorage.setItem('animationShown', 'true');
-        }
-    }, []);
+        document.body.style.backgroundColor = muiTheme.palette.background.default;
+        document.body.style.color = muiTheme.palette.text.primary;
 
-    // Handle the end of the animation
-    const handleAnimationEnd = () => {
-        setShowAnimation(false);
-    };
+    }, [muiTheme]);
 
     return (
-        <ThemeProvider theme={theme}>
+        <MuiThemeProvider theme={muiTheme}>
             <Router basename="/">
                 <ScrollToTop />
-                {showAnimation && <InitialAnimation onAnimationEnd={handleAnimationEnd} />} {/* Conditionally render the InitialAnimation */}
                 <NavBar/>
                 <Routes>
                     <Route path="/" element={<MainPage/>} />
                     <Route path="/music" element={<MainPage/>} />
                     <Route path="/videos" element={<Videos/>} />
-                    <Route path="/links" element={<Links/>} />
                 </Routes>
+                <Fab
+                    aria-label="toggle theme" 
+                    onClick={toggleTheme}
+                    style={{
+                        position: 'fixed', // Position fixed to float
+                        top: 20, // Top margin
+                        right: 20, // Right margin
+                        zIndex: 1000, // Ensure it's above other elements
+                    }}>
+                    {theme === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
+                </Fab>
             </Router>
-        </ThemeProvider>
+        </MuiThemeProvider>
     );
 }
 

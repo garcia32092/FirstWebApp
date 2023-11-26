@@ -1,9 +1,13 @@
 import React from 'react';
 import { Container } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 
 const Videos = () => {
+    const theme = useTheme();
+    
     return (
         <Container style={{
+            backgroundColor: theme.palette.background.default,
             marginTop: '25px',
             marginBottom: '1px',
             display: 'flex', 

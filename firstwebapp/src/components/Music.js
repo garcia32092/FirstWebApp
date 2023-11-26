@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { Container, Grid, Card, CardMedia, CardContent, Typography } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 import './Music.css'; // Import the CSS file
 
 const Music = ({ releases, onReleaseSelect }) => {
+    const theme = useTheme();
+
     const [activeReleaseIndex, setActiveReleaseIndex] = useState(null);
 
     const handleReleaseClick = (release, index) => {
@@ -23,7 +26,7 @@ const Music = ({ releases, onReleaseSelect }) => {
                         image={release.imageUrl}
                         alt={release.title}
                     />
-                    <CardContent style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+                    <CardContent style={{ backgroundColor: theme.palette.mode === 'dark' ? '#000000' : '#CCCCCC', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
                         <Typography gutterBottom variant="body2" align="center">
                             {release.title}
                         </Typography>

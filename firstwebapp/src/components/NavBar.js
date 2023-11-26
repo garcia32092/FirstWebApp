@@ -1,6 +1,7 @@
 import React from 'react';
-import { AppBar, Toolbar, Button, IconButton } from '@mui/material';
+import { Container, Toolbar, Button, IconButton } from '@mui/material';
 import { Link } from 'react-router-dom';
+import { useTheme } from '@mui/material/styles';
 import SpotifySVG from '../assets/spotify.svg';
 import AppleMusicSVG from '../assets/applemusic.svg';
 import InstagramSVG from '../assets/instagram.svg';
@@ -11,8 +12,10 @@ import YouTubeSVG from '../assets/youtube.svg';
 import DiscordSVG from '../assets/discord.svg';
 
 const NavBar = () => {
+    const theme = useTheme();
+    
     const linkStyle = {
-        color: 'black',
+        color: theme.palette.text.primary,
     };
 
     const socialLinks = [
@@ -27,10 +30,10 @@ const NavBar = () => {
     ];
 
     return (
-        <AppBar position="static" color="default" style={{ backgroundColor: 'inherit', boxShadow: 'none' }}>
+        <Container style={{ backgroundColor: theme.palette.background.default }}>
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: '10px' }}>
                 <Link to="/">
-                    <img src={process.env.PUBLIC_URL + "/BlackKnowledgeLogo.png"} alt="Logo" width="125" height="89" /> {/* logo png image ratio is 1 to 0.71 */}
+                    <img src={process.env.PUBLIC_URL + theme.palette.mode === 'dark' ? "/WhiteKnowledgeLogo.png" : "/BlackKnowledgeLogo.png"} alt="Logo" width="125" height="89" /> {/* logo png image ratio is 1 to 0.71 */}
                 </Link>
             </div>
             <Toolbar style={{ justifyContent: 'center' }}>
@@ -87,7 +90,7 @@ const NavBar = () => {
                         </IconButton>
                     ))}
             </div>
-        </AppBar>
+        </Container>
     );
 }
 
