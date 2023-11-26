@@ -31,14 +31,33 @@ const Music = ({ releases, onReleaseSelect }) => {
                         alt={release.title}
                     />
                     <CardContent style={{ backgroundColor: theme.palette.mode === 'dark' ? '#000000' : '#CCCCCC', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-                        <Typography gutterBottom variant="body2" align="center">
+                        <Typography 
+                            gutterBottom 
+                            variant="body2" 
+                            align="center"
+                            sx={{
+                                fontSize: { xs: '0.7rem', sm: '0.8rem' },
+                            }}
+                        >
                             {release.title}
                         </Typography>
-                        <Typography variant="caption" color="text.secondary">
-                            {release.releaseDate}
-                        </Typography>
-                        <Typography variant="caption" color="text.secondary">
+                        <Typography 
+                            variant="caption" 
+                            color="text.secondary"
+                            sx={{
+                                fontSize: { xs: '0.6rem', sm: '0.6rem' },
+                            }}
+                        >
                             {release.releaseType}
+                        </Typography>
+                        <Typography 
+                            variant="caption" 
+                            color="text.secondary"
+                            sx={{
+                                fontSize: { xs: '0.7rem', sm: '0.7rem' },
+                            }}
+                        >
+                            {release.releaseDate}
                         </Typography>
                     </CardContent>
                 </Card>
