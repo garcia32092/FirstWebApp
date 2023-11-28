@@ -32,7 +32,14 @@ const MainPage = () => {
             );
         } else {
             return (
-                <Typography variant="body1" align="center" style={{ marginTop: '20px' }}>
+                <Typography
+                    variant="body1"
+                    align="center"
+                    sx={{
+                        marginTop: '20px',
+                        fontSize: { xs: '0.8rem', sm: '1rem' },
+                    }}
+                >
                     <NorthIcon/>This release is not on streaming platforms<NorthIcon/>
                 </Typography>
             );
@@ -43,7 +50,16 @@ const MainPage = () => {
         <Container style={{ marginTop: '25px', marginBottom: '25px', backgroundColor: theme.palette.background.default }}>
             {selectedRelease && (
                 <>
-                    <Typography variant="h6" align="center" color={theme.palette.text.primary}>{selectedRelease.title}</Typography>
+                    <Typography
+                        variant="h6"
+                        align="center"
+                        color={theme.palette.text.primary}
+                        sx={{
+                            fontSize: { xs: '1.05rem', sm: '1.25rem' },
+                        }}
+                    >
+                        {selectedRelease.title}
+                    </Typography>
                     <iframe
                         title={`${selectedRelease.title} Widget`}
                         width="100%"
