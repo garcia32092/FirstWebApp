@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Toolbar, Button, IconButton } from '@mui/material';
+import { Container, IconButton } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { useTheme } from '@mui/material/styles';
 import SpotifySVG from '../assets/spotify.svg';
@@ -14,9 +14,9 @@ import DiscordSVG from '../assets/discord.svg';
 const NavBar = () => {
     const theme = useTheme();
     
-    const linkStyle = {
-        color: theme.palette.text.primary,
-    };
+    // const linkStyle = {
+    //     color: theme.palette.text.primary,
+    // };
 
     const socialLinks = [
         { icon: <img src={SpotifySVG} alt="Spotify" style={{ width: 40, height: 40 }} />, url: '' },
@@ -36,7 +36,7 @@ const NavBar = () => {
                     <img src={process.env.PUBLIC_URL + theme.palette.mode === 'dark' ? "/WhiteKnowledgeLogo.png" : "/BlackKnowledgeLogo.png"} alt="Logo" width="125" height="89" /> {/* logo png image ratio is 1 to 0.71 */}
                 </Link>
             </div>
-            <Toolbar style={{ justifyContent: 'center' }}>
+            {/* <Toolbar style={{ justifyContent: 'center' }}>
                 <Button
                     style={linkStyle}
                     sx={{
@@ -60,14 +60,8 @@ const NavBar = () => {
                     to="/videos">
                     Videos
                 </Button>
-                {/* <Button
-                        style={linkStyle}
-                        component={Link}
-                        to="/links">
-                        Links
-                </Button> */}
-            </Toolbar>
-            <div style={{ justifyContent: 'center', display: 'flex' }}>
+            </Toolbar> */}
+            <div style={{ marginTop: '20px', justifyContent: 'center', display: 'flex' }}>
                     {socialLinks.map((link, index) => (
                         <IconButton
                             key={index}
