@@ -62,7 +62,7 @@ const Music = ({ releases, onReleaseSelect }) => {
                                 fontSize: { xs: '0.7rem', sm: '0.7rem' },
                             }}
                         >
-                            {release.releaseDate}
+                            Released: {release.releaseDate}
                         </Typography>
                     </CardContent>
                 </Card>
