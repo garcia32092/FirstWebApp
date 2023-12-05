@@ -39,17 +39,31 @@ const MainPage = () => {
 
     const renderURLEmbed = () => {
         if (selectedRelease && selectedRelease.releaseType !== "Video") {
-            return (
-                <iframe
-                    title={`${selectedRelease.title} Widget`}
-                    width="100%"
-                    height="265"
-                    scrolling="no"
-                    frameborder="0"
-                    src={selectedRelease.embedUrl}
-                    style={{ width: '0px', minWidth: '100%', maxWidth: '100%' }}>
-                </iframe>
-            );
+            if (selectedRelease.platform === "Official") {
+                return (
+                    <iframe
+                        title={`${selectedRelease.title} Widget`}
+                        width="100%"
+                        height="375"
+                        scrolling="no"
+                        frameborder="0"
+                        src={selectedRelease.embedUrl}
+                        style={{ maxWidth: '100%' }}>
+                    </iframe>
+                );
+            } else {
+                return (
+                    <iframe
+                        title={`${selectedRelease.title} Widget`}
+                        width="100%"
+                        height="265"
+                        scrolling="no"
+                        frameborder="0"
+                        src={selectedRelease.embedUrl}
+                        style={{ maxWidth: '100%' }}>
+                    </iframe>
+                );
+            }
         } else {
             return (
                 <iframe
@@ -77,7 +91,7 @@ const MainPage = () => {
                     height="52"
                     scrolling="no"
                     frameborder="0"
-                    style={{ width: '0px', minWidth: '100%', maxWidth: '100%' }}>
+                    style={{ marginTop: '25px', maxWidth: '100%' }}>
                 </iframe>
             );
         } else if (selectedRelease && selectedRelease.releaseType === "Video") {
@@ -90,7 +104,7 @@ const MainPage = () => {
                     height="52"
                     scrolling="no"
                     frameborder="0"
-                    style={{ width: '0px', minWidth: '100%', maxWidth: '100%' }}>
+                    style={{ marginTop: '25px', maxWidth: '100%' }}>
                 </iframe>
                 );
             }
