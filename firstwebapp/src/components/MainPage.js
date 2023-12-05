@@ -74,7 +74,7 @@ const MainPage = () => {
                     title={`${selectedRelease.title} Linkshare`}
                     src={selectedRelease.linkshareURL}
                     width="100%"
-                    height="300"
+                    height="52"
                     scrolling="no"
                     frameborder="0"
                     style={{ width: '0px', minWidth: '100%', maxWidth: '100%' }}>
@@ -87,7 +87,7 @@ const MainPage = () => {
                     title={`${selectedRelease.title} Linkshare`}
                     src={selectedRelease.linkshareURL}
                     width="100%"
-                    height="300"
+                    height="52"
                     scrolling="no"
                     frameborder="0"
                     style={{ width: '0px', minWidth: '100%', maxWidth: '100%' }}>
