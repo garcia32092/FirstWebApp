@@ -55,12 +55,11 @@ const MainPage = () => {
                 <iframe
                     title={`${selectedRelease.title} Video`}
                     src={selectedRelease.embedUrl}
-                    width="850"
-                    height="478"
+                    width="575"
+                    height="325"
                     style={{
                         border: 'none', // Optional, removes the border
                         maxWidth: '100%', // Ensures responsiveness
-                        maxHeight: '100vh' // Adjusts height based on viewport height
                     }}
                     allowFullScreen>
                 </iframe>
@@ -82,6 +81,19 @@ const MainPage = () => {
                 </iframe>
             );
         } else if (selectedRelease && selectedRelease.releaseType === "Video") {
+            if (selectedRelease.linkshareURL) {
+                return (
+                    <iframe
+                    title={`${selectedRelease.title} Linkshare`}
+                    src={selectedRelease.linkshareURL}
+                    width="100%"
+                    height="300"
+                    scrolling="no"
+                    frameborder="0"
+                    style={{ width: '0px', minWidth: '100%', maxWidth: '100%' }}>
+                </iframe>
+                );
+            }
             return (
                 <iframe
                 title="YT Subscribe Button"
@@ -89,7 +101,7 @@ const MainPage = () => {
                 width="115"
                 height="25"
                 style={{
-                    marginTop: '30px',
+                    marginTop: '20px',
                     border: 'none',
                 }}>
                 </iframe>
