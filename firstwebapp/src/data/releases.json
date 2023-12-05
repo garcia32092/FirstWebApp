@@ -1,12 +1,33 @@
 [
     {
+        "title": "Lately (Prod. Knowledge)",
+        "releaseDate": "January 24, 2016",
+        "releaseType": "Single",
+        "imageUrl": "https://i1.sndcdn.com/artworks-000144469281-v58vct-t500x500.jpg",
+        "embedUrl": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/243647226&color=%231e1c1e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+        "linkshareURL": "",
+        "songs": ["Lately (Prod. Knowledge)"],
+        "platform": "SoundCloud"
+    },
+    {
+        "title": "Til I Die [Remix]",
+        "releaseDate": "July 14, 2015",
+        "releaseType": "Remix",
+        "imageUrl": "https://i1.sndcdn.com/avatars-000276579577-i2kb2n-t500x500.jpg",
+        "embedUrl": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/214739417&color=%231e1c1e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+        "linkshareURL": "",
+        "songs": ["Til I Die [Remix]"],
+        "platform": "SoundCloud"
+    },
+    {
         "title": "I'll Be On Soon (Official One Take Video)",
         "releaseDate": "October 12, 2018",
         "releaseType": "Video",
-        "imageUrl": "https://i9.ytimg.com/vi_webp/2uG4tvHSnLo/mq3.webp?sqp=CMD_pasG&rs=AOn4CLCysUivqwmd5ntm6sySfep6XWJaGw",
+        "imageUrl": "https://img.youtube.com/vi/2uG4tvHSnLo/maxresdefault.jpg",
         "embedUrl": "https://www.youtube.com/embed?list=UULFLlTafwrWEXSrMb3VLfpfGw",
         "linkshareURL": "",
-        "songs": ["I'll Be On Soon (Official One Take Video)"]
+        "songs": ["I'll Be On Soon (Official One Take Video)"],
+        "platform": "YouTube"
     },
     {
         "title": "Big Things, Small Packages Vol. 1",
@@ -15,7 +36,8 @@
         "imageUrl": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/albums/images/311655/original/resize:300x300/crop:x0y0w1000h1000/hash:1700558087/BTSP.jpg?1700558087",
         "embedUrl": "https://www.reverbnation.com/widget_code/html_widget/Album_311655?widget_id=55&pwc[included_songs]=1&context_type=album&pwc[size]=small&pwc[color]=dark",
         "linkshareURL": "",
-        "songs": ["My Name is Knowledge", "Wanted", "Flow 3.5", "Blood Sweat & Tears", "Turn Up"]
+        "songs": ["My Name is Knowledge", "Wanted", "Flow 3.5", "Blood Sweat & Tears", "Turn Up"],
+        "platform": "Reverbnation"
     },
     {
         "title": "Remember Me",
@@ -33,7 +55,8 @@
         "imageUrl": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/albums/images/24307/original/resize:300x300/crop:x0y0w750h750/hash:1461344588/Cover_MAIN2.jpg?1461344588",
         "embedUrl": "https://www.reverbnation.com/widget_code/html_widget/Album_24307?widget_id=55&pwc[included_songs]=1&context_type=album&pwc[size]=small&pwc[color]=dark",
         "linkshareURL": "",
-        "songs": ["Song 1", "Song 2", "Song 3"]
+        "songs": ["I Wanna Be Famous", "Hands In The Air", "Game On Lock", "House Party Freestyle", "You Know What I'm Talkin' Bout", "CDC Freestyle Flow", "Back It Up feat. J Real", "Flow 2.5", "Problems", "Too Sick", "New Shit Freestyle with Wiz Khalifa Sample", "Everywhere I Go", "Ride For Me", "Walk With Me", "I Need Some Sleep", "I'm Innocent", "Feet On The Ground", "Where Did The Music Go", "Hello Young Lady", "Forever Be Down", "Love or Hate", "Take A Journey"],
+        "platform": "Reverbnation"
     },
     {
         "title": "18 & On Probation",
@@ -42,7 +65,8 @@
         "imageUrl": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/albums/images/24634/original/resize:300x300/crop:x0y0w1000h1000/hash:1461179172/PoP2SiCk_18_On_Probation-front-large.jpg?1461179172",
         "embedUrl": "https://www.reverbnation.com/widget_code/html_widget/Album_24634?widget_id=55&pwc[included_songs]=1&context_type=album&pwc[size]=small&pwc[color]=dark",
         "linkshareURL": "",
-        "songs": ["Song a", "Song b", "Song c"]
+        "songs": ["18 & on Probation Intro.", "Kid With A Broken Dream", "Get Rich", "Cabin Fever Remake", "Smoke Sumthin", "When Im Around", "Leavin Gurlz", "Get It Wet", "Dressed In All Black SNIPPET", "Hit Me On Tha Phone", "Flow 1.5", "Liquor Pourin SNIPPET", "I Ride", "My Block", "I Wish"],
+        "platform": "Reverbnation"
     },
     {
         "title": "Tha Kum Up",
@@ -51,6 +75,7 @@
         "imageUrl": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/albums/images/24635/original/resize:300x300/crop:x0y0w1000h1000/hash:1461179172/PoP_aka_Sick_SliM_Tha_Kum_Up-front-large.jpg?1461179172",
         "embedUrl": "https://www.reverbnation.com/widget_code/html_widget/Album_24635?widget_id=55&pwc[included_songs]=1&context_type=album&pwc[size]=small&pwc[color]=dark",
         "linkshareURL": "",
-        "songs": ["Song 1", "Song 2", "Song 3"]
+        "songs": ["Entrance", "Welcome Back", "Vicious", "Where Da Weed At", "Welcome To AriZona", "Ice Cream Paint Job Flow", "On The Scene Freestyle", "I'm Ready", "Pray For Me", "It's All Good Freestyle", "Suicidal Studio Session"],
+        "platform": "Reverbnation"
     }
 ]
