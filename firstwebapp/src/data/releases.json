@@ -1,25 +1,5 @@
 [
     {
-        "title": "Lately (Prod. Knowledge)",
-        "releaseDate": "January 24, 2016",
-        "releaseType": "Single",
-        "imageUrl": "https://i1.sndcdn.com/artworks-000144469281-v58vct-t500x500.jpg",
-        "embedUrl": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/243647226&color=%231e1c1e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
-        "linkshareURL": "",
-        "songs": ["Lately (Prod. Knowledge)"],
-        "platform": "SoundCloud"
-    },
-    {
-        "title": "Til I Die [Remix]",
-        "releaseDate": "July 14, 2015",
-        "releaseType": "Remix",
-        "imageUrl": "https://i1.sndcdn.com/avatars-000276579577-i2kb2n-t500x500.jpg",
-        "embedUrl": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/214739417&color=%231e1c1e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
-        "linkshareURL": "",
-        "songs": ["Til I Die [Remix]"],
-        "platform": "SoundCloud"
-    },
-    {
         "title": "I'll Be On Soon (Official One Take Video)",
         "releaseDate": "October 12, 2018",
         "releaseType": "Video",
@@ -28,6 +8,256 @@
         "linkshareURL": "",
         "songs": ["I'll Be On Soon (Official One Take Video)"],
         "platform": "YouTube"
+    },
+    {
+        "title": "Passion (Official One Take Video)",
+        "releaseDate": "July 10, 2018",
+        "releaseType": "Video",
+        "imageUrl": "https://i.ytimg.com/vi/_RGbiMiIE8E/hqdefault.jpg",
+        "embedUrl": "https://www.youtube.com/embed/_RGbiMiIE8E?si=7azxsfnKvDFXfarc",
+        "linkshareURL": "",
+        "songs": ["Passion (Official One Take Video)"],
+        "platform": "YouTube"
+    },
+    {
+        "title": "This One",
+        "releaseDate": "March 30, 2018",
+        "releaseType": "Single",
+        "imageUrl": "https://i1.sndcdn.com/artworks-000327720906-ty96vn-t500x500.jpg",
+        "embedUrl": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/422616798&color=%231e1c1e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+        "linkshareURL": "",
+        "songs": ["This One"],
+        "platform": "SoundCloud"
+    },
+    {
+        "title": "I Know What That's Like",
+        "releaseDate": "February 12, 2018",
+        "releaseType": "Single",
+        "imageUrl": "https://i1.sndcdn.com/artworks-000301459305-st676s-t500x500.jpg",
+        "embedUrl": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/398788407&color=%231e1c1e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+        "linkshareURL": "",
+        "songs": ["I Know What That's Like"],
+        "platform": "SoundCloud"
+    },
+    {
+        "title": "Somehow",
+        "releaseDate": "January 21, 2018",
+        "releaseType": "Single",
+        "imageUrl": "https://i1.sndcdn.com/artworks-000293251014-kqiqmp-t500x500.jpg",
+        "embedUrl": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/391621647&color=%231e1c1e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+        "linkshareURL": "",
+        "songs": ["Somehow"],
+        "platform": "SoundCloud"
+    },
+    {
+        "title": "Together",
+        "releaseDate": "January 21, 2018",
+        "releaseType": "Single",
+        "imageUrl": "https://i1.sndcdn.com/artworks-000288786137-dz3yjc-t500x500.jpg",
+        "embedUrl": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/387180767&color=%231e1c1e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+        "linkshareURL": "",
+        "songs": ["Together"],
+        "platform": "SoundCloud"
+    },
+    {
+        "title": "I Believe",
+        "releaseDate": "January 15, 2018",
+        "releaseType": "Single",
+        "imageUrl": "https://i1.sndcdn.com/artworks-000285854504-fs3tbg-t500x500.jpg",
+        "embedUrl": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/384311714&color=%231e1c1e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+        "linkshareURL": "",
+        "songs": ["I Believe"],
+        "platform": "SoundCloud"
+    },
+    {
+        "title": "Keep It Moving",
+        "releaseDate": "January 6, 2018",
+        "releaseType": "Single",
+        "imageUrl": "https://i1.sndcdn.com/artworks-000281594111-v2uzva-t500x500.jpg",
+        "embedUrl": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/379806425&color=%231e1c1e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+        "linkshareURL": "",
+        "songs": ["Keep It Moving"],
+        "platform": "SoundCloud"
+    },
+    {
+        "title": "December 2017",
+        "releaseDate": "December 29, 2017",
+        "releaseType": "Single",
+        "imageUrl": "https://i1.sndcdn.com/artworks-000277815959-ewsbfo-t500x500.jpg",
+        "embedUrl": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/376289888&color=%231e1c1e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+        "linkshareURL": "",
+        "songs": ["December 2017"],
+        "platform": "SoundCloud"
+    },
+    {
+        "title": "Can't Stop Now (Feat. Vik)",
+        "releaseDate": "December 23, 2017",
+        "releaseType": "Single",
+        "imageUrl": "https://i1.sndcdn.com/artworks-000274417541-4cgkdo-t500x500.jpg",
+        "embedUrl": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/373706630&color=%231e1c1e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+        "linkshareURL": "",
+        "songs": ["Can't Stop Now (Feat. Vik)"],
+        "platform": "SoundCloud"
+    },
+    {
+        "title": "The Mirror",
+        "releaseDate": "December 13, 2017",
+        "releaseType": "Single",
+        "imageUrl": "https://i1.sndcdn.com/artworks-000269402915-9lv9ar-t500x500.jpg",
+        "embedUrl": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/369172880&color=%231e1c1e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+        "linkshareURL": "",
+        "songs": ["The Mirror"],
+        "platform": "SoundCloud"
+    },
+    {
+        "title": "Gone",
+        "releaseDate": "December 4, 2017",
+        "releaseType": "Single",
+        "imageUrl": "https://i1.sndcdn.com/artworks-000265184492-u8ygwj-t500x500.jpg",
+        "embedUrl": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/365109578&color=%231e1c1e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+        "linkshareURL": "",
+        "songs": ["Gone"],
+        "platform": "SoundCloud"
+    },
+    {
+        "title": "Back Now",
+        "releaseDate": "November 27, 2017",
+        "releaseType": "Single",
+        "imageUrl": "https://i1.sndcdn.com/artworks-000261942074-6610bc-t500x500.jpg",
+        "embedUrl": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/361684544&color=%231e1c1e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+        "linkshareURL": "",
+        "songs": ["Back Now"],
+        "platform": "SoundCloud"
+    },
+    {
+        "title": "Starting To Realize",
+        "releaseDate": "November 20, 2017",
+        "releaseType": "Single",
+        "imageUrl": "https://i1.sndcdn.com/artworks-000259072391-hvxgf9-t500x500.jpg",
+        "embedUrl": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/358676657&color=%231e1c1e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+        "linkshareURL": "",
+        "songs": ["Starting To Realize"],
+        "platform": "SoundCloud"
+    },
+    {
+        "title": "Hold On",
+        "releaseDate": "May 18, 2016",
+        "releaseType": "Single",
+        "imageUrl": "https://i1.sndcdn.com/artworks-000164635021-uihlc6-t500x500.jpg",
+        "embedUrl": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/264843056&color=%231e1c1e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+        "linkshareURL": "",
+        "songs": ["Hold On"],
+        "platform": "SoundCloud"
+    },
+    {
+        "title": "Only Thing",
+        "releaseDate": "April 28, 2016",
+        "releaseType": "Single",
+        "imageUrl": "https://i1.sndcdn.com/artworks-000164634988-xy4bbt-t500x500.jpg",
+        "embedUrl": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/261383202&color=%231e1c1e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+        "linkshareURL": "",
+        "songs": ["Only Thing"],
+        "platform": "SoundCloud"
+    },
+    {
+        "title": "Till The End Remix",
+        "releaseDate": "April 9, 2016",
+        "releaseType": "Remix",
+        "imageUrl": "https://i1.sndcdn.com/avatars-000276579577-i2kb2n-t500x500.jpg",
+        "embedUrl": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/258221963&color=%231e1c1e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+        "linkshareURL": "",
+        "songs": ["Till The End Remix"],
+        "platform": "SoundCloud"
+    },
+    {
+        "title": "Till The End Remix",
+        "releaseDate": "April 9, 2016",
+        "releaseType": "Video",
+        "imageUrl": "https://img.youtube.com/vi/NINbBmAPLmE/maxresdefault.jpg",
+        "embedUrl": "https://www.youtube.com/embed/NINbBmAPLmE?si=3Pxts_9HT8DMKm7c",
+        "linkshareURL": "",
+        "songs": ["Till The End Remix"],
+        "platform": "YouTube"
+    },
+    {
+        "title": "Keep Up",
+        "releaseDate": "March 22, 2016",
+        "releaseType": "Single",
+        "imageUrl": "https://i1.sndcdn.com/avatars-000276579577-i2kb2n-t500x500.jpg",
+        "embedUrl": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/254350482&color=%231e1c1e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+        "linkshareURL": "",
+        "songs": ["Keep Up"],
+        "platform": "SoundCloud"
+    },
+    {
+        "title": "Keep Up",
+        "releaseDate": "March 22, 2016",
+        "releaseType": "Video",
+        "imageUrl": "https://img.youtube.com/vi/KLh-r4kFpIw/maxresdefault.jpg",
+        "embedUrl": "https://www.youtube.com/embed/KLh-r4kFpIw?si=lDRlU75lF9c33uGy",
+        "linkshareURL": "",
+        "songs": ["Keep Up"],
+        "platform": "YouTube"
+    },
+    {
+        "title": "Random [Remix]",
+        "releaseDate": "March 1, 2016",
+        "releaseType": "Remix",
+        "imageUrl": "https://i1.sndcdn.com/avatars-000276579577-i2kb2n-t500x500.jpg",
+        "embedUrl": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/249776177&color=%231e1c1e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+        "linkshareURL": "",
+        "songs": ["Random [Remix]"],
+        "platform": "SoundCloud"
+    },
+    {
+        "title": "Random Remix",
+        "releaseDate": "February 19, 2016",
+        "releaseType": "Video",
+        "imageUrl": "https://img.youtube.com/vi/sd6koxBh4DM/maxresdefault.jpg",
+        "embedUrl": "https://www.youtube.com/embed/sd6koxBh4DM?si=BrNFwRBTJFID6tml",
+        "linkshareURL": "",
+        "songs": ["Random Remix"],
+        "platform": "YouTube"
+    },
+    {
+        "title": "Lately",
+        "releaseDate": "January 24, 2016",
+        "releaseType": "Single",
+        "imageUrl": "https://i1.sndcdn.com/artworks-000144469281-v58vct-t500x500.jpg",
+        "embedUrl": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/243647226&color=%231e1c1e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+        "linkshareURL": "",
+        "songs": ["Lately"],
+        "platform": "SoundCloud"
+    },
+    {
+        "title": "Til I Die Remix",
+        "releaseDate": "July 14, 2015",
+        "releaseType": "Remix",
+        "imageUrl": "https://i1.sndcdn.com/avatars-000276579577-i2kb2n-t500x500.jpg",
+        "embedUrl": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/214739417&color=%231e1c1e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+        "linkshareURL": "",
+        "songs": ["Til I Die Remix"],
+        "platform": "SoundCloud"
+    },
+    {
+        "title": "I'll Be On Soon (Official One Take Video)",
+        "releaseDate": "August 19, 2014",
+        "releaseType": "Album",
+        "imageUrl": "https://i.scdn.co/image/ab67616d00001e023968bf74bc9ffd24ddc5a9db",
+        "embedUrl": "https://embed.music.apple.com/us/album/new-beginning/909467411",
+        "linkshareURL": "https://odesli.co/embed/?url=https%3A%2F%2Falbum.link%2FNewBeginning&theme=dark",
+        "songs": ["New Beginning", "Look into My Eyez (feat. Pops2Sick)", "Dreamz Come True", "My Zone", "Get Out My Way", "Quik Trip (Skit)", "I'm Young", "My Team", "Like It's My Birthday", "Makin Money, Makin Music","After the Tone (Skit)", "If I Die Before I Wake", "Spreading Knowledge (feat. Vincent)", "Live A Dream", "All Me (feat. Vincent)", "This Is Only The Beginning", "Microphone (Bonus Track)", "Passin' Me By (Remake) [Bonus Track]"],
+        "platform": "Official"
+    },
+    {
+        "title": "Wanted",
+        "releaseDate": "January 10, 2014",
+        "releaseType": "Single",
+        "imageUrl": "https://i1.sndcdn.com/artworks-000071541835-zicpd1-t500x500.jpg",
+        "embedUrl": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/128877725&color=%231e1c1e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+        "linkshareURL": "",
+        "songs": ["Wanted"],
+        "platform": "SoundCloud"
     },
     {
         "title": "Big Things, Small Packages Vol. 1",
@@ -49,6 +279,26 @@
         "songs": ["It Ain't Over", "Turning Back", "When I Blow Up", "No Romance Freestyle", "Remember Me", "I'm A Ridah", "Take This From Me feat. Shakey", "Fly Away", "Alive", "Lonely", "MC", "My Love Song", "Black Superman", "Better Off", "CrewLoveFreestyle", "Started From The Bottom"]
     },
     {
+        "title": "When I Blow Up [Official Music Video]",
+        "releaseDate": "January 10, 2013",
+        "releaseType": "Video",
+        "imageUrl": "https://img.youtube.com/vi/7IlVAiz9620/maxresdefault.jpg",
+        "embedUrl": "https://www.youtube.com/embed/7IlVAiz9620?si=qJ_ftARldZkY8JhC",
+        "linkshareURL": "",
+        "songs": ["When I Blow Up [Official Music Video]"],
+        "platform": "YouTube"
+    },
+    {
+        "title": "Lonely [Official Music Video]",
+        "releaseDate": "October 13, 2012",
+        "releaseType": "Video",
+        "imageUrl": "https://img.youtube.com/vi/vA9-r1h7EE4/maxresdefault.jpg",
+        "embedUrl": "https://www.youtube.com/embed/vA9-r1h7EE4?si=O0OTnI52fVI7ZQ8F",
+        "linkshareURL": "",
+        "songs": ["Lonely [Official Music Video]"],
+        "platform": "YouTube"
+    },
+    {
         "title": "Before The First Album",
         "releaseDate": "March 20, 2012",
         "releaseType": "Mixtape",
@@ -57,6 +307,16 @@
         "linkshareURL": "",
         "songs": ["I Wanna Be Famous", "Hands In The Air", "Game On Lock", "House Party Freestyle", "You Know What I'm Talkin' Bout", "CDC Freestyle Flow", "Back It Up feat. J Real", "Flow 2.5", "Problems", "Too Sick", "New Shit Freestyle with Wiz Khalifa Sample", "Everywhere I Go", "Ride For Me", "Walk With Me", "I Need Some Sleep", "I'm Innocent", "Feet On The Ground", "Where Did The Music Go", "Hello Young Lady", "Forever Be Down", "Love or Hate", "Take A Journey"],
         "platform": "Reverbnation"
+    },
+    {
+        "title": "I Need Some Sleep",
+        "releaseDate": "September 2, 2011",
+        "releaseType": "Video",
+        "imageUrl": "https://img.youtube.com/vi/3mZiiJ3EPdA/maxresdefault.jpg",
+        "embedUrl": "https://www.youtube.com/embed/3mZiiJ3EPdA?si=vwW5OQBxLEmKuZjn",
+        "linkshareURL": "",
+        "songs": ["I Need Some Sleep"],
+        "platform": "YouTube"
     },
     {
         "title": "18 & On Probation",
@@ -69,6 +329,26 @@
         "platform": "Reverbnation"
     },
     {
+        "title": "Get Rich",
+        "releaseDate": "March 4, 2011",
+        "releaseType": "Video",
+        "imageUrl": "https://i.ytimg.com/vi/whC4qCSvSVo/hqdefault.jpg",
+        "embedUrl": "https://www.youtube.com/embed/whC4qCSvSVo?si=ikDVy9XS7wwuBLQv",
+        "linkshareURL": "",
+        "songs": ["Get Rich"],
+        "platform": "YouTube"
+    },
+    {
+        "title": "Ice Cream Paint Job Flow",
+        "releaseDate": "August 24, 2010",
+        "releaseType": "Video",
+        "imageUrl": "https://i.ytimg.com/vi/pq4o8YjZSr0/hqdefault.jpg",
+        "embedUrl": "https://www.youtube.com/embed/pq4o8YjZSr0?si=b_lQ0MKa6yZkGfhG",
+        "linkshareURL": "",
+        "songs": ["Ice Cream Paint Job Flow"],
+        "platform": "YouTube"
+    },
+    {
         "title": "Tha Kum Up",
         "releaseDate": "July 22, 2010",
         "releaseType": "Mixtape",
@@ -77,5 +357,16 @@
         "linkshareURL": "",
         "songs": ["Entrance", "Welcome Back", "Vicious", "Where Da Weed At", "Welcome To AriZona", "Ice Cream Paint Job Flow", "On The Scene Freestyle", "I'm Ready", "Pray For Me", "It's All Good Freestyle", "Suicidal Studio Session"],
         "platform": "Reverbnation"
+    },
+    {
+        "title": "Passin' Me By",
+        "releaseDate": "February 1, 2010",
+        "releaseType": "Video",
+        "imageUrl": "https://i.ytimg.com/vi/mPmOYdvODGY/hqdefault.jpg",
+        "embedUrl": "https://www.youtube.com/embed/mPmOYdvODGY?si=CN1uQU6yNb_AjG2U",
+        "linkshareURL": "",
+        "songs": ["Passin' Me By"],
+        "platform": "YouTube"
     }
+    
 ]
