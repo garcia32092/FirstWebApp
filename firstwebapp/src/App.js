@@ -6,7 +6,6 @@ import Brightness7Icon from '@mui/icons-material/Brightness7';
 import { useTheme } from './components/ThemeContext';
 import { useLocation } from 'react-router-dom';
 import MainPage from './components/MainPage';
-import Videos from './components/Videos';
 import NavBar from './components/NavBar';
 import './App.css';
 import 'aos/dist/aos.css';
@@ -51,8 +50,6 @@ function App() {
                 <NavBar/>
                 <Routes>
                     <Route path="/" element={<MainPage/>} />
-                    <Route path="/music" element={<MainPage/>} />
-                    <Route path="/videos" element={<Videos/>} />
                 </Routes>
                 <Fab
                     aria-label="toggle theme" 
