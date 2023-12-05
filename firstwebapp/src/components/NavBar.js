@@ -13,10 +13,6 @@ import DiscordSVG from '../assets/discord.svg';
 
 const NavBar = () => {
     const theme = useTheme();
-    
-    // const linkStyle = {
-    //     color: theme.palette.text.primary,
-    // };
 
     const socialLinks = [
         { icon: <img src={SpotifySVG} alt="Spotify" style={{ width: 40, height: 40 }} />, url: '' },
@@ -36,31 +32,6 @@ const NavBar = () => {
                     <img src={process.env.PUBLIC_URL + theme.palette.mode === 'dark' ? "/WhiteKnowledgeLogo.png" : "/BlackKnowledgeLogo.png"} alt="Logo" width="125" height="89" /> {/* logo png image ratio is 1 to 0.71 */}
                 </Link>
             </div>
-            {/* <Toolbar style={{ justifyContent: 'center' }}>
-                <Button
-                    style={linkStyle}
-                    sx={{
-                        '&:hover': {
-                            textDecoration: 'underline',
-                        },
-                    }}
-                    component={Link}
-                    to="/music">
-                    Music
-                </Button>
-                <div style={{ width: '4vh' }} />
-                <Button
-                    style={linkStyle}
-                    sx={{
-                        '&:hover': {
-                            textDecoration: 'underline',
-                        },
-                    }}
-                    component={Link}
-                    to="/videos">
-                    Videos
-                </Button>
-            </Toolbar> */}
             <div style={{ marginTop: '20px', justifyContent: 'center', display: 'flex' }}>
                     {socialLinks.map((link, index) => (
                         <IconButton
