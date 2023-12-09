@@ -25,15 +25,18 @@ const Music = ({ releases, onReleaseSelect }) => {
                     className={`card ${activeReleaseIndex === index ? 'card-active' : ''}`}
                     sx={{
                         width: '100%',
+                        height: {xs: '120px', sm: '250px'},
                         display: 'flex',
                         flexDirection: 'column',
                     }}
                 >
                     <CardMedia
                         component="img"
-                        height="155"
                         image={release.imageUrl}
                         alt={release.title}
+                        sx={{
+                            height: {xs: '50px', sm: '155px'}
+                        }}
                     />
                     <CardContent style={{ backgroundColor: theme.palette.mode === 'dark' ? '#000000' : '#CCCCCC', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
                         <Typography 
@@ -59,7 +62,7 @@ const Music = ({ releases, onReleaseSelect }) => {
                             variant="caption" 
                             color="text.secondary"
                             sx={{
-                                fontSize: { xs: '0.7rem', sm: '0.7rem' },
+                                fontSize: { xs: '0.4rem', sm: '0.7rem' },
                             }}
                         >
                             Released: {release.releaseDate}

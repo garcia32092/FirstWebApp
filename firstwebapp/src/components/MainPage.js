@@ -18,6 +18,15 @@ const MainPage = () => {
     const [filterType, setFilterType] = useState('');
     // Add states for filterDate and filterFormat if needed
     const theme = useTheme();
+    const officialiframeStyle = window.innerWidth <= 768 ? 
+        { maxWidth: '100%', height: '152px' } : 
+        { maxWidth: '100%', height: '352px' };
+    const soundCloudiframeStyle = window.innerWidth <= 768 ? 
+        { maxWidth: '100%', height: '152px' } : 
+        { maxWidth: '100%', height: '275px' };
+    const youTubeiframeStyle = window.innerWidth <= 768 ? 
+        { border: 'none', maxWidth: '100%', height: '195px' } : 
+        { border: 'none', maxWidth: '100%', height: '325px' };
 
     useEffect(() => {
         setReleases(releasesData);
@@ -44,11 +53,10 @@ const MainPage = () => {
                     <iframe
                         title={`${selectedRelease.title} Widget`}
                         width="100%"
-                        height="375"
                         scrolling="no"
                         frameborder="0"
                         src={selectedRelease.embedUrl}
-                        style={{ maxWidth: '100%' }}>
+                        style={officialiframeStyle}>
                     </iframe>
                 );
             } else {
@@ -56,11 +64,10 @@ const MainPage = () => {
                     <iframe
                         title={`${selectedRelease.title} Widget`}
                         width="100%"
-                        height="265"
                         scrolling="no"
                         frameborder="0"
                         src={selectedRelease.embedUrl}
-                        style={{ maxWidth: '100%' }}>
+                        style={soundCloudiframeStyle}>
                     </iframe>
                 );
             }
@@ -70,11 +77,7 @@ const MainPage = () => {
                     title={`${selectedRelease.title} Video`}
                     src={selectedRelease.embedUrl}
                     width="575"
-                    height="325"
-                    style={{
-                        border: 'none', // Optional, removes the border
-                        maxWidth: '100%', // Ensures responsiveness
-                    }}
+                    style={youTubeiframeStyle}
                     allowFullScreen>
                 </iframe>
             );

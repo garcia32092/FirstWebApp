@@ -10,7 +10,7 @@
         "platform": "Official"
     },
     {
-        "title": "I'll Be On Soon (Official One Take Video)",
+        "title": "I'll Be On Soon (One Take)",
         "releaseDate": "October 12, 2018",
         "releaseType": "Video",
         "imageUrl": "https://img.youtube.com/vi/2uG4tvHSnLo/maxresdefault.jpg",
@@ -30,7 +30,7 @@
         "platform": "Official"
     },
     {
-        "title": "Passion (Official One Take Video)",
+        "title": "Passion (One Take)",
         "releaseDate": "July 10, 2018",
         "releaseType": "Video",
         "imageUrl": "https://i.ytimg.com/vi/_RGbiMiIE8E/hqdefault.jpg",
@@ -299,17 +299,17 @@
         "songs": ["It Ain't Over", "Turning Back", "When I Blow Up", "No Romance Freestyle", "Remember Me", "I'm A Ridah", "Take This From Me feat. Shakey", "Fly Away", "Alive", "Lonely", "MC", "My Love Song", "Black Superman", "Better Off", "CrewLoveFreestyle", "Started From The Bottom"]
     },
     {
-        "title": "When I Blow Up [Official Music Video]",
+        "title": "When I Blow Up [Video]",
         "releaseDate": "January 10, 2013",
         "releaseType": "Video",
         "imageUrl": "https://img.youtube.com/vi/7IlVAiz9620/maxresdefault.jpg",
         "embedUrl": "https://www.youtube.com/embed/7IlVAiz9620?si=qJ_ftARldZkY8JhC",
         "linkshareURL": "",
-        "songs": ["When I Blow Up [Official Music Video]"],
+        "songs": ["When I Blow Up [Video]"],
         "platform": "YouTube"
     },
     {
-        "title": "Lonely [Official Music Video]",
+        "title": "Lonely [Video]",
         "releaseDate": "October 13, 2012",
         "releaseType": "Video",
         "imageUrl": "https://img.youtube.com/vi/vA9-r1h7EE4/maxresdefault.jpg",
