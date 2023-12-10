@@ -75,7 +75,7 @@ const Music = ({ releases, onReleaseSelect }) => {
 
     return (
         <Container style={{ 
-            marginTop: '25px', 
+            marginTop: '10px', 
             marginBottom: '25px', 
             display: 'flex', 
             justifyContent: 'center' 
