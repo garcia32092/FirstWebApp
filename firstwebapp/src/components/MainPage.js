@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { Grid, Button, Container, Typography } from '@mui/material';
 import FilterComponent from './Filter';
 import SearchComponent from './Search';
@@ -9,6 +9,8 @@ import { useTheme } from '@mui/material/styles';
 import NorthIcon from '@mui/icons-material/North';
 
 const releaseTypeOptions = ["Single", "Album", "Mixtape", "Video"];
+const PAGE_SIZE = 8;
+const MAX_ITEMS = 500; // Set a limit to prevent performance issues
 
 const MainPage = () => {
     const [releases, setReleases] = useState([]);
@@ -18,6 +20,8 @@ const MainPage = () => {
     const [filterType, setFilterType] = useState('');
     // Add states for filterDate and filterFormat if needed
     const theme = useTheme();
+    const [currentPage, setCurrentPage] = useState(1);
+    const [loading, setLoading] = useState(false);
     const officialiframeStyle = window.innerWidth <= 768 ? 
         { maxWidth: '100%', height: '152px' } : 
         { maxWidth: '100%', height: '352px' };
@@ -27,6 +31,25 @@ const MainPage = () => {
     const youTubeiframeStyle = window.innerWidth <= 768 ? 
         { border: 'none', maxWidth: '100%', height: '195px' } : 
         { border: 'none', maxWidth: '100%', height: '325px' };
+
+    const currentReleases = filteredReleases.slice(0, currentPage * PAGE_SIZE);
+
+    const timeoutIdRef = useRef();
+
+    const loadMoreItems = useCallback(() => {
+        // Check if all items are already loaded
+        if (currentReleases.length >= filteredReleases.length || currentPage * PAGE_SIZE >= MAX_ITEMS) {
+            setLoading(false);
+            return;
+        }
+        setLoading(true);
+        
+        // Introduce a delay before setting loading to false and incrementing the page
+        timeoutIdRef.current = setTimeout(() => {
+            setCurrentPage(prevPage => prevPage + 1);
+            setLoading(false);
+        }, 300); // 300 milliseconds = 0.3 second
+    }, [currentPage, currentReleases.length, filteredReleases.length]);
 
     useEffect(() => {
         setReleases(releasesData);
@@ -45,6 +68,19 @@ const MainPage = () => {
             setSelectedRelease(null);
         }
     }, [searchTerm, filterType, releases /*, filterDate, filterFormat*/]);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.innerHeight + document.documentElement.scrollTop !== document.documentElement.offsetHeight) return;
+            loadMoreItems();
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            clearTimeout(timeoutIdRef.current); // Clear the timeout
+        };
+    }, [loadMoreItems]); // Include loadMoreItems in the dependency array
 
     const renderURLEmbed = () => {
         if (selectedRelease && selectedRelease.releaseType !== "Video") {
@@ -139,6 +175,21 @@ const MainPage = () => {
         }
     };
 
+    const renderNoResultsMessage = () => {
+        return (
+            <Typography
+                variant="h6"
+                align="center"
+                sx={{
+                    marginTop: '20px',
+                    fontSize: { xs: '1.25rem', sm: '1.75rem' },
+                }}
+            >
+                No songs found.
+            </Typography>
+        );
+    };
+
     return (
         <Container style={{
             marginTop: '25px',
@@ -193,7 +244,26 @@ const MainPage = () => {
                 </Grid>
             </Container>
             {/* Render other filters as needed */}
-            <Music releases={filteredReleases} onReleaseSelect={setSelectedRelease} />
+
+            <Typography
+                variant="subtitle1"
+                align="center"
+                sx={{
+                    marginTop: '15px',
+                    marginBottom: '10px',
+                    fontSize: { xs: '0.75rem', sm: '1rem' }
+                }}
+            >
+                Total Releases Found: {filteredReleases.length}
+            </Typography>
+
+            <Music releases={currentReleases} onReleaseSelect={setSelectedRelease} />
+
+            {filteredReleases.length === 0 && searchTerm !== '' && renderNoResultsMessage()}
+
+            {loading && currentReleases.length < filteredReleases.length && (
+                <Typography>Loading...</Typography>
+            )}
         </Container>
     );
 }
