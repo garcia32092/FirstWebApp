@@ -3,7 +3,13 @@ import { FormControl, InputLabel, Select, MenuItem } from '@mui/material';
 
 const FilterComponent = ({ filterType, setFilterType, filterOptions }) => {
     return (
-        <FormControl>
+        <FormControl sx={{
+            minWidth: { xs: '110px', sm: '200px' },
+            '.MuiInputBase-root': {
+                height: { xs: '40px', sm: 'auto' }, // Adjust the height
+                fontSize: { xs: '0.8rem', sm: '1rem' }, // Adjust the font size
+            }
+        }}>
             <InputLabel sx={{
                     fontSize: { xs: '0.65rem', sm: '1rem' },
                     wordWrap: 'break-word',

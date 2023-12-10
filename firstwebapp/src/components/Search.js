@@ -9,7 +9,13 @@ const SearchComponent = ({ searchTerm, setSearchTerm }) => {
             onChange={(e) => setSearchTerm(e.target.value)}
             sx={{
                 width: { xs: '140px', sm: '375px', lg: '500px' },
-                fontSize: {xs: '0.8rem', sm: '1rem'}
+                // fontSize: { xs: '0.8rem', sm: '1rem' },
+                '.MuiInputBase-input': {
+                    height: { xs: '7px', sm: 'auto' } // Adjust for mobile
+                },
+                '.MuiInputLabel-root': {
+                    fontSize: { xs: '0.8rem', sm: '1rem' }
+                }
             }}
         />
     );
