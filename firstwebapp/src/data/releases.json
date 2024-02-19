@@ -387,6 +387,16 @@
         "linkshareURL": "",
         "songs": ["Passin' Me By"],
         "platform": "YouTube"
+    },
+    {
+        "title": "PoP$ Mixtape",
+        "releaseDate": "July 15, 2009",
+        "releaseType": "Mixtape",
+        "imageUrl": "https://gp1.wac.edgecastcdn.net/802892/http_public_production/albums/images/314840/original/resize:1000x1000/crop:x499y0w999h999/hash:1708377321/Black_Knowledge_Logo_copy.png?1708377321",
+        "embedUrl": "https://www.reverbnation.com/widget_code/html_widget/Album_314840?widget_id=55&pwc[included_songs]=1&context_type=album&pwc[size]=small&pwc[color]=dark",
+        "linkshareURL": "",
+        "songs": ["Fall To My Knees Freestyle", "On My Grind", "Don't Fuck With Us", "Klikk Klakk Pow Feat. Suspect", "Ride Throo AZ Feat. CAP", "Family", "Ride With Me", "Bloodstained Feat. Suspect", "Ima King", "Sleepless Nights Feat. Suspect", "Last Words", "Whip Game Proper (Suspect)", "Whip Game Proper (PoP$)"],
+        "platform": "Reverbnation"
     }
     
 ]
