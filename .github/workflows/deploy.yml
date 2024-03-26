@@ -31,4 +31,4 @@ jobs:
         branch: gh-pages
         folder: firstwebapp/build  # specify the folder containing the build files
         clean: true  # this ensures that old files are removed before deploying new ones
-        token: ${{ secrets.GH_PAGES_TOKEN }}
+        token: ${{ secrets.GITHUB_TOKEN }}
